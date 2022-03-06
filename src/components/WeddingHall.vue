@@ -7,12 +7,11 @@
           <h2>Wedding Hall</h2>
         </div>
       </div>
-      <div class="row syw-section-white-bg">
-        <image-slider class="p-2"
-            :images="weddingHallImages"
-        ></image-slider>
+      <div class="row text-center" style="display: block;">
+        <image-slider class="p-3 w-75 h-50" :images="weddingHallImages" style="border-radius:15%">
+        </image-slider>
       </div>
-      <div class="row syw-section-content syw-section-white-bg text-center">
+      <div class="row syw-section-content text-center">
         <div class="desc">
           <h3>노블 발렌티 (삼성점)</h3>
           <p><strong>서울시 강남구 봉은사로 637 (서울시 강남구 삼성동 109-6)</strong></p>
@@ -44,29 +43,19 @@
           </naver-maps>
         </div>
       </div>
-      <div class="row syw-section-white-bg text-center p-2">
-        <div class="col">
+      <div class="row text-center" style="display: block;">
+        <div class="col p-2">
           <a v-bind:href="linkToNaverMap()">
-            <img class="h-75"
-                 v-bind:src="require('@/assets/map/naver_map.png')"
-                 style="width: 85%"
-            />
+            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/naver_map.png')" />
           </a>
-        </div>
-        <div class="col">
           <a v-bind:href="linkToKakaoMap()">
-            <img class="h-75"
-                 v-bind:src="require('@/assets/map/kakao_map.png')"
-                 style="width: 85%"
-            />
+            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/kakao_map.png')" />
           </a>
-        </div>
-        <div class="col">
           <a v-bind:href="linkToGoogleMap()">
-            <img class="h-75"
-                 v-bind:src="require('@/assets/map/google_maps.png')"
-                 style="width: 85%"
-            />
+            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/google_map.png')" />
+          </a>
+          <a v-bind:href="linkToTMap()">
+            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/tmap.png')" />
           </a>
         </div>
       </div>
@@ -109,6 +98,9 @@ export default {
     const linkToKakaoMap = () => {
       return "https://map.kakao.com/?urlX=514329&urlY=1115520&urlLevel=3&itemId=17157328&srcid=17157328&map_type=TYPE_MAP";
     }
+    const linkToTMap = () => {
+      return "https://surl.tmap.co.kr/de819d92";
+    }
     const linkToGoogleMap = () => {
       return "https://goo.gl/maps/MMAywu71FBkcbDxD9";
     };
@@ -131,6 +123,7 @@ export default {
       onLoadInfoWindow,
       linkToNaverMap,
       linkToKakaoMap,
+      linkToTMap,
       linkToGoogleMap,
       weddingHallImages,
     };
@@ -140,6 +133,10 @@ export default {
 <style>
 .syw-wedding-hall-bg {
   /*background-image: url(~@/assets/img/img_bg_3.jpg);*/
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.syw-wedding-hall-map-icon {
+  border-radius: 75%;
 }
 </style>

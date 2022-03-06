@@ -1,5 +1,5 @@
 <template>
-  <img class="animate__animated animate__fadeIn animate__slower w-100 h-100"
+  <img class="animate__animated animate__fadeIn animate__slower"
        v-bind:src="image" />
 </template>
 <script>
