@@ -7,7 +7,7 @@
           <h2 style="color: white">Guest Book</h2>
         </div>
       </div>
-      <a-list item-layout="vertical" size="large" :pagination="pagination" :data-source="letters">
+      <a-list class="animate__animated animate__slow animate__fadeIn" item-layout="vertical" size="large" :pagination="pagination" :data-source="letters">
         <template #renderItem="{ item }">
           <a-list-item key="item.id">
             <template #extra>

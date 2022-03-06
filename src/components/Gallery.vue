@@ -7,7 +7,7 @@
           <h2>Gallery</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center">
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
         <div class="col-6">
           <img class="w-100 h-75"
                v-bind:src="require('@/assets/img/hall/1.jpg')"
@@ -23,7 +23,7 @@
           <h2>2021 - 2022</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center">
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
         <div class="col-6">
           <img class="w-100 h-75"
                v-bind:src="require('@/assets/img/gallery/theme/tmon_1.jpg')"
