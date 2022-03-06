@@ -24,7 +24,7 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="js">
 import {onMounted, ref} from "vue";
 import axios from "axios";
 
@@ -93,5 +93,4 @@ export default {
 .ant-pagination li {
   border-radius: 3rem;
 }
-
 </style>
