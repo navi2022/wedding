@@ -19,7 +19,7 @@
               <div v-for="(msg, index) in letters.slice(0, limit)"
                    :key="`${index}`"
                    class="syw-event-wrap">
-                <h3>{{ msg.title }}</h3>
+                <h3>{{ msg.creator }}</h3>
                 <pre style="max-height:360px">{{ msg.content }}</pre>
                 <p class="mt-4"
                     style="font-family: 'Sacramento', Arial, serif; font-size:13px;">
@@ -68,6 +68,7 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/img_bg_3.jpg);
+  max-height: 700px;
   /*background: rgba(0, 0, 0, .2);*/
 }
 
