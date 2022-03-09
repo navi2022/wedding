@@ -20,7 +20,7 @@
                    :key="`${index}`"
                    class="syw-event-wrap">
                 <h3>{{ msg.creator }}</h3>
-                <pre style="max-height:360px">{{ msg.content }}</pre>
+                <pre style="max-height:100px">{{ msg.content }}</pre>
                 <p class="mt-4"
                     style="font-family: 'Sacramento', Arial, serif; font-size:13px;">
                   {{ msg.createdAt }}
@@ -68,7 +68,7 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/img_bg_3.jpg);
-  max-height: 700px;
+  max-height: 400px;
   /*background: rgba(0, 0, 0, .2);*/
 }
 

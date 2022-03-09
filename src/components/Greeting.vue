@@ -148,4 +148,48 @@ export default {
   transform-origin: 100% 100%;
 }
 
+
+.simply-section {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: white; /* rgba(241, 78, 149, 0.8); */
+  margin: 0 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  animation: pulse 1s ease infinite;
+}
+
+.simply-section > div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+}
+
+.simply-amount {
+  color: black !important;
+  font-size: 20px !important;
+  font-family: "Sacramento", Arial, serif;
+}
+
+.simply-word {
+  /*color: rgba(255, 255, 255, 0.7);*/
+  font-size: 15px !important;
+  display: block;
+  color: purple !important;
+  font-family: "Sacramento", Arial, serif;
+}
+
+.simply-date {
+  /*color: rgba(255, 255, 255, 0.7);*/
+  font-size: 20px !important;
+  display: block;
+  color: white !important;
+  font-family: "Sacramento", Arial, serif;
+  font-weight: bold;
+}
 </style>
