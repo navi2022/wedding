@@ -7,36 +7,29 @@
           <h2>Gallery</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col">
+          <img class="w-75"
+               v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
+               v-on:click="showByTheme('STUDIO')"
+          />
+          <h2>Studio</h2>
+        </div>
+      </div>
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
         <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/hall/1.jpg')"
-               v-on:click="showByYear('2019-2020')"
+          <img class="w-100"
+               v-bind:src="require('@/assets/img/gallery/2018_2019/MAIN.jpg')"
+               v-on:click="showByYear('2018-2019')"
           />
           <h2>2019 - 2020</h2>
         </div>
         <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/hall/2.jpg')"
-               v-on:click="showByYear('2021-2022')"
+          <img class="w-100"
+               v-bind:src="require('@/assets/img/gallery/2020_2021/MAIN.jpg')"
+               v-on:click="showByYear('2020-2021')"
           />
-          <h2>2021 - 2022</h2>
-        </div>
-      </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/gallery/theme/tmon_1.jpg')"
-               v-on:click="showByTheme('tmon')"
-          />
-          <h2>Tmon</h2>
-        </div>
-        <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/gallery/theme/tmon_1.jpg')"
-               v-on:click="showByTheme('travel')"
-          />
-          <h2>Travel</h2>
+          <h2>2020 - 2021</h2>
         </div>
       </div>
     </div>
@@ -73,11 +66,74 @@ export default {
       show();
     };
     const getImagesByYear = (year) => {
-      if (year === '2019-2020') {
-        return [{title: '', src: require("@/assets/img/gallery/year/2019_bride.jpg")}];
+      if (year === '2018-2019') {
+        return [
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20181216_211827.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20181225_182052.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20181225_183304.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20181231_192648.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20181231_215158.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211232.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211246.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211253.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190714_203336.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190719_220713.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190721_181421.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190721_181431.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190726_103604.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190726_103620.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190726_150521.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190816_204335.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190816_222823.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190816_223051.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190830_181016.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190910_094048.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190910_211658.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190912_110206.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190912_114134.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190912_124925.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20190921_185108.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20191012_165058.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20191012_165101.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20191019_194953.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20191019_200946.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2018_2019/20191228_175101.jpg")},
+        ];
       }
-      if (year === '2021-2022') {
-        return [{title: '', src: require("@/assets/img/gallery/year/2019_bride.jpg")}];
+      if (year === '2020-2021') {
+        return [
+          {title: '', src: require("@/assets/img/gallery/2020_2021/MAIN.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134135.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134140.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200229_155514.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200305_190423.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200305_200242.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200321_121847.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200425_184859.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200704_124214.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_190456.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_200439.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_200455.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20201031_202534.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210210_151401.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210620_183140.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210626_185630.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210808_182957.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20211119_193120.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20211225_121135.jpg")},
+        ];
       }
       return [];
     }
@@ -86,16 +142,29 @@ export default {
       show();
     };
     const getImagesByTheme = (theme) => {
-      if (theme === 'tmon') {
+      if (theme === 'STUDIO') {
         return [
-          {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")},
-          {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")}
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1239.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1053.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1082.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1123.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1210.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1215.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1341.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1361.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0427.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0459.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0543.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0657.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0801.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0829.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0921.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0985.jpg")},
         ];
       }
       if (theme === 'travel') {
         return [
           {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")},
-          {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")}
         ];
       }
       return [];
@@ -119,7 +188,15 @@ export default {
   background: #FAFAD2
 }
 
-.syw-section-content div img {
-  border-radius: 3rem
+.syw-content-galleries h2 {
+  color: #5a5a5a;
+  font-family: "Sacramento", Arial, serif;
+  padding: 1.1rem ;
 }
+
+.syw-content-galleries div img {
+  border-radius: 3rem;
+  max-height: 330px;
+}
+
 </style>
