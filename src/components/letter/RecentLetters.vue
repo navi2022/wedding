@@ -19,7 +19,7 @@
                class="syw-event-wrap"
           >
             <h3>{{ msg.creator }}</h3>
-            <pre style="max-height:250px">{{ msg.content }}</pre>
+            <pre class="p-1">{{ msg.content }}</pre>
             <p class="mt-3 syw-created-at">{{ msg.createdAt }}</p>
           </div>
         </flicking>
@@ -71,7 +71,8 @@ export default {
   font-weight: 400;
   font-size: 17px;
   letter-spacing: 2px;
-  font-family: 'Sacramento', Arial, serif; font-size:15px;
+  font-family: 'Sacramento', Arial, serif;
+  font-size: 15px;
 }
 
 .syw-event-wrap {
@@ -105,5 +106,12 @@ export default {
   margin-top: 0px;
   display: block;
   color: rgba(255, 255, 255, .8);
+  max-height:250px;
+  
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 </style>
