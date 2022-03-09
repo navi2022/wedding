@@ -38,7 +38,7 @@
                 <i class="bi bi-telephone-fill"></i>
               </span>
             </a>
-            <a href='sms:010-4947-8993'>
+            <a href='sms:010-7758-0292'>
               <span class=syw-contactus-icon>
                 <i class="bi bi-chat-text-fill"></i>
               </span>
