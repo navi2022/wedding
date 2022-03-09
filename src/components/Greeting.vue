@@ -29,13 +29,13 @@ import {onMounted, ref} from "vue";
 export default {
   name: 'Greeting',
   setup: function () {
-    const weddingDateTime = ref(new Date(2022, 5, 21, 15));
+    const weddingDateTime = ref(new Date(2022, (5 - 1), 21, 15));
     const getWeddingDateTime = () => {
       const hours = weddingDateTime.value.getHours();
       const formHour = (hours <= 12) ? "오전 " + hours : "오후 " + (hours - 12);
 
       return weddingDateTime.value.getFullYear()
-          + ".0" + weddingDateTime.value.getMonth()
+          + ".0" + weddingDateTime.value.getMonth() + 1
           + "." + weddingDateTime.value.getDate() + " " + formHour + "시 ";
     }
     const diff = ref({
