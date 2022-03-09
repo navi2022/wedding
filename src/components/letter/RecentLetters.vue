@@ -16,7 +16,8 @@
                   :plugins="plugins">
           <div v-for="(msg, index) in letters.slice(0, limit)"
                :key="`${index}`"
-               class="syw-event-wrap">
+               class="syw-event-wrap"
+          >
             <h3>{{ msg.creator }}</h3>
             <pre style="max-height:250px">{{ msg.content }}</pre>
             <p class="mt-3 syw-created-at">{{ msg.createdAt }}</p>
@@ -61,8 +62,7 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/img_bg_3.jpg);
-  height: 600px;
-  max-height: 600px;
+  height: 570px;
   /*background: rgba(0, 0, 0, .2);*/
 }
 
@@ -95,13 +95,14 @@ export default {
 }
 
 .syw-event-wrap span {
-  margin-top: 16px;
+  margin-top: 0px;
   display: block;
   color: rgba(255, 255, 255, .8);
 }
 
 .syw-event-wrap pre {
-  margin-top: 16px;
+  font-size: 18px;
+  margin-top: 0px;
   display: block;
   color: rgba(255, 255, 255, .8);
 }

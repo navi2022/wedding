@@ -41,8 +41,8 @@
             <a-textarea v-model:value="contentInfo.content"
                         placeholder="내용"
                         show-count
-                        :maxlength="200"
-                        :auto-size="{ minRows: 2 }"
+                        :maxlength="150"
+                        :auto-size="{ minRows: 2, maxRows: 10 }"
                         @focusout.prevent="isValidContent()"
                         :class="{ 'is-invalid': contentInfo.invalid}"
             >
