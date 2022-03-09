@@ -42,7 +42,7 @@ p, ul, ol {
   .syw-cover {
     height: 700px;
     height: inherit;
-    padding: 3em 0;
+    /*padding: 3em 0;*/
   }
 }
 
@@ -58,7 +58,7 @@ p, ul, ol {
 }
 
 .syw-overlay .syw-header {
-  height: 534px;
+  height: 900px;
 }
 
 .syw-cover .display-t {
@@ -86,7 +86,7 @@ p, ul, ol {
 .syw-cover .display-tc h2 {
   color: #fff;
   font-size: 80px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   font-weight: 300 !important;
 }
 
@@ -104,14 +104,14 @@ p, ul, ol {
   color: #fff;
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .syw-cover .display-tc span {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
 }
 
 .syw-cover .display-tc pre {
@@ -512,8 +512,8 @@ p, ul, ol {
 
 .simply-section {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: white; /* rgba(241, 78, 149, 0.8); */
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -533,15 +533,62 @@ p, ul, ol {
 
 .simply-amount {
   color: black !important;
-  font-size: 30px !important;
+  font-size: 20px !important;
+  font-family: "Sacramento", Arial, serif;
 }
 
 .simply-word {
-  color: black !important;/* rgba(255, 255, 255, 0.7); */
-  font-size: 12px !important;
+  /*color: rgba(255, 255, 255, 0.7);*/
+  font-size: 15px !important;
+  display: block;
+  color: purple !important;
+  font-family: "Sacramento", Arial, serif;
 }
 
-.simply-section .simply-word {
+.simply-date {
+  /*color: rgba(255, 255, 255, 0.7);*/
+  font-size: 20px !important;
   display: block;
-  color: black !important;
+  color: white !important;
+  font-family: "Sacramento", Arial, serif;
+  font-weight: bold;
+}
+
+/* font-family: "Open Sans", Arial, sans-serif; */
+/* font-family: "Montez", cursive; */
+/* font-family: "Sacramento", Arial, serif; */
+
+/*이하 css 는 heart*/
+
+.custum-heart {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  /*background: white; !* rgba(241, 78, 149, 0.8); *!*/
+  margin: 0 4px;
+  margin-top: 10px;
+  animation: pulse 1s ease infinite;
+  padding-top: 35px;
+}
+.custum-heart::before, .custum-heart::after {
+  z-index: -1000;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 150px;
+  border-radius: 50px 50px 0 0;
+  background: white;
+}
+
+.custum-heart::before {
+  /*left: 100px;*/
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.custum-heart::after {
+  left: -50px;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }

@@ -8,37 +8,15 @@
             <div class="animate__animated animate__fadeIn animate__slower">
               <div class="col syw-section-head text-center">
                 <h2>The Wedding</h2>
-                <p>
-                  <strong>{{ getWeddingDateTime() }}</strong>
-                </p>
+                <span class="simply-date">{{ getWeddingDateTime() }}</span>
               </div>
             </div>
-
-            <div class="simply-section">
+            <div class="custum-heart">
               <div>
-                <span class="simply-amount">{{getDiffDay()}}</span>
-                <span class="simply-word">일</span>
+                <span class="simply-amount">{{getDiffDay()}} Days</span>
+                <span class="simply-word">{{getDiffHour()}}:{{getDiffMinute()}}:{{getDiffSecond()}}</span>
               </div>
             </div>
-            <div class="simply-section">
-              <div>
-                <span class="simply-amount">{{getDiffHour()}}</span>
-                <span class="simply-word">시간</span>
-              </div>
-            </div>
-            <div class="simply-section">
-              <div>
-                <span class="simply-amount">{{getDiffMinute()}}</span>
-                <span class="simply-word">분</span>
-              </div>
-            </div>
-            <div class="simply-section">
-              <div>
-                <span class="simply-amount">{{getDiffSecond()}}</span>
-                <span class="simply-word">초</span>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -106,7 +84,7 @@ export default {
 </script>
 <style scoped>
 .syw-greeting-background {
-  background-image: url(~@/assets/img/cover_bg_1.jpg);
+  background-image: url(~@/assets/img/flowers.jpeg);
   background-position: 0px 0px;
 }
 
