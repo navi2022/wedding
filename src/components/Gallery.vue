@@ -7,36 +7,29 @@
           <h2>Gallery</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col">
+          <img class="w-100"
+               v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
+               v-on:click="showByTheme('studio')"
+          />
+          <h2>Studio</h2>
+        </div>
+      </div>
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
         <div class="col-6">
-          <img class="w-100 h-75"
+          <img class="w-100"
                v-bind:src="require('@/assets/img/gallery/2018_2019/MAIN.jpg')"
                v-on:click="showByYear('2018-2019')"
           />
           <h2>2019 - 2020</h2>
         </div>
         <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/hall/2.jpg')"
+          <img class="w-100"
+               v-bind:src="require('@/assets/img/gallery/2020_2021/MAIN.jpg')"
                v-on:click="showByYear('2020-2021')"
           />
-          <h2>2021 - 2022</h2>
-        </div>
-      </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
-               v-on:click="showByTheme('studio')"
-          />
-          <h2>Studio</h2>
-        </div>
-        <div class="col-6">
-          <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/gallery/theme/tmon_1.jpg')"
-               v-on:click="showByTheme('travel')"
-          />
-          <h2>Travel</h2>
+          <h2>2020 - 2021</h2>
         </div>
       </div>
     </div>
@@ -112,8 +105,35 @@ export default {
           {title: '', src: require("@/assets/img/gallery/2018_2019/20191228_175101.jpg")},
         ];
       }
-      if (year === '2021-2022') {
-        return [{title: '', src: require("@/assets/img/gallery/year/2019_bride.jpg")}];
+      if (year === '2020-2021') {
+        return [
+          {title: '', src: require("@/assets/img/gallery/2020_2021/MAIN.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134135.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134140.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200229_155514.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200305_190423.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200305_200242.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200321_121847.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200425_184859.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200704_124214.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_190456.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_200439.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20200726_200455.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20201031_202534.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210210_151401.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210620_183140.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210626_185630.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20210808_182957.jpg")},
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20211119_193120.jpg")},
+
+          {title: '', src: require("@/assets/img/gallery/2020_2021/20211225_121135.jpg")},
+        ];
       }
       return [];
     }
@@ -168,7 +188,12 @@ export default {
   background: #FAFAD2
 }
 
-.syw-section-content div img {
-  border-radius: 3rem
+.syw-content-galleries {
 }
+
+.syw-content-galleries div img {
+  border-radius: 3rem;
+  max-height: 250px;
+}
+
 </style>
