@@ -161,13 +161,6 @@ p, ul, ol {
   /*height: 360px;*/
 }
 
-.syw-section-white-yellow-bg {
-  background-size: cover;
-  background: #FAFAD2 no-repeat center center;
-  position: relative;
-  /*height: 360px;*/
-}
-
 .syw-section-gray-bg {
   background-size: cover;
   background: #F6FAF7 no-repeat center center;
@@ -200,9 +193,6 @@ p, ul, ol {
   letter-spacing: 2px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.4);
-}
-
-.syw-section-content {
 }
 
 .syw-section-content .desc {
@@ -552,43 +542,4 @@ p, ul, ol {
   color: white !important;
   font-family: "Sacramento", Arial, serif;
   font-weight: bold;
-}
-
-/* font-family: "Open Sans", Arial, sans-serif; */
-/* font-family: "Montez", cursive; */
-/* font-family: "Sacramento", Arial, serif; */
-
-/*이하 css 는 heart*/
-
-.custum-heart {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  /*background: white; !* rgba(241, 78, 149, 0.8); *!*/
-  margin: 0 4px;
-  margin-top: 10px;
-  animation: pulse 1s ease infinite;
-  padding-top: 35px;
-}
-.custum-heart::before, .custum-heart::after {
-  z-index: -1000;
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100px;
-  height: 150px;
-  border-radius: 50px 50px 0 0;
-  background: white;
-}
-
-.custum-heart::before {
-  /*left: 100px;*/
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-
-.custum-heart::after {
-  left: -50px;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
 }

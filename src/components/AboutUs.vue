@@ -3,7 +3,7 @@
     <div class="container">
       <div class="col syw-section-head text-center">
         <span>groom & bride</span>
-        <h2>About Us</h2>
+        <h2>Hello!</h2>
       </div>
       <div class="couple-wrap animate-box">
         <div class="couple-half">
