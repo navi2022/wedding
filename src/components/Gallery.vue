@@ -26,10 +26,10 @@
       <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
         <div class="col-6">
           <img class="w-100 h-75"
-               v-bind:src="require('@/assets/img/gallery/theme/tmon_1.jpg')"
-               v-on:click="showByTheme('tmon')"
+               v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
+               v-on:click="showByTheme('studio')"
           />
-          <h2>Tmon</h2>
+          <h2>Studio</h2>
         </div>
         <div class="col-6">
           <img class="w-100 h-75"
@@ -86,10 +86,24 @@ export default {
       show();
     };
     const getImagesByTheme = (theme) => {
-      if (theme === 'tmon') {
+      if (theme === 'studio') {
         return [
-          {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")},
-          {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")}
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1053.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1082.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1123.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1179.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1210.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1215.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1341.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1361.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0427.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0459.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0543.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0657.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0801.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0829.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0921.jpg")},
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_0985.jpg")},
         ];
       }
       if (theme === 'travel') {
