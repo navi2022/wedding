@@ -8,27 +8,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="display-t" style="display:block;">
-          <div class="display-tc" style="display:block;">
-            <flicking class="text-center"
-                      :options="{
+        <flicking class="text-center"
+                  :options="{
                       circular: true,
                       horizontal: true,
                       renderOnlyVisible: true}"
-                      :plugins="plugins">
-              <div v-for="(msg, index) in letters.slice(0, limit)"
-                   :key="`${index}`"
-                   class="syw-event-wrap">
-                <h3>{{ msg.creator }}</h3>
-                <pre style="max-height:360px">{{ msg.content }}</pre>
-                <p class="mt-4"
-                    style="font-family: 'Sacramento', Arial, serif; font-size:13px;">
-                  {{ msg.createdAt }}
-                </p>
-              </div>
-            </flicking>
+                  :plugins="plugins">
+          <div v-for="(msg, index) in letters.slice(0, limit)"
+               :key="`${index}`"
+               class="syw-event-wrap">
+            <h3>{{ msg.creator }}</h3>
+            <pre style="max-height:250px">{{ msg.content }}</pre>
+            <p class="mt-3 syw-created-at">{{ msg.createdAt }}</p>
           </div>
-        </div>
+        </flicking>
       </div>
     </div>
   </div>
@@ -56,7 +49,7 @@ export default {
       })
     };
     onMounted(getLetters);
-    const plugins = ref([new AutoPlay({duration: 4000, direction: "NEXT", stopOnHover: true})]);
+    const plugins = ref([new AutoPlay({duration: 6000, direction: "NEXT", stopOnHover: true})]);
     return {
       limit,
       letters,
@@ -68,8 +61,17 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/img_bg_3.jpg);
-  max-height: 700px;
+  height: 600px;
+  max-height: 600px;
   /*background: rgba(0, 0, 0, .2);*/
+}
+
+.syw-created-at {
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-family: 'Sacramento', Arial, serif; font-size:15px;
 }
 
 .syw-event-wrap {
