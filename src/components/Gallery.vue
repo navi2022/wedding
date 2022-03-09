@@ -88,6 +88,7 @@ export default {
     const getImagesByTheme = (theme) => {
       if (theme === 'studio') {
         return [
+          {title: '', src: require("@/assets/img/gallery/studio/IMG_1239.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1053.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1082.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1123.jpg")},
