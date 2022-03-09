@@ -112,4 +112,40 @@ export default {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
 }
+
+/*이하 css 는 heart*/
+
+.custum-heart {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  /*background: white; !* rgba(241, 78, 149, 0.8); *!*/
+  margin: 0 4px;
+  margin-top: 10px;
+  animation: pulse 1s ease infinite;
+  padding-top: 35px;
+}
+.custum-heart::before, .custum-heart::after {
+  z-index: -1000;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 150px;
+  border-radius: 50px 50px 0 0;
+  background: white;
+}
+
+.custum-heart::before {
+  /*left: 100px;*/
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.custum-heart::after {
+  left: -50px;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
 </style>
