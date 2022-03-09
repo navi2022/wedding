@@ -12,10 +12,12 @@
           <div class="form-group text-center pb-4">
             <a-input v-model:value="nameInfo.name"
                      placeholder="성함"
+                     size="default"
+                     style="width:200px;"
+                     :maxLength="18"
+                     :class="{ 'is-invalid': nameInfo.invalid}"
                      @keydown.enter.prevent="isValidName()"
                      @focusout.prevent="isValidName()"
-                     style="width: 200px;"
-                     :class="{ 'is-invalid': nameInfo.invalid}"
             >
               <template #prefix>
                 <user-outlined type="user" />
@@ -38,7 +40,9 @@
           <div class="form-group text-center pb-4">
             <a-textarea v-model:value="contentInfo.content"
                         placeholder="내용"
-                        auto-size show-count :maxlength="200"
+                        show-count
+                        :maxlength="150"
+                        :auto-size="{ minRows: 2, maxRows: 10 }"
                         @focusout.prevent="isValidContent()"
                         :class="{ 'is-invalid': contentInfo.invalid}"
             >

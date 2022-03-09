@@ -8,27 +8,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="display-t" style="display:block;">
-          <div class="display-tc" style="display:block;">
-            <flicking class="text-center"
-                      :options="{
+        <flicking class="text-center"
+                  :options="{
                       circular: true,
                       horizontal: true,
                       renderOnlyVisible: true}"
-                      :plugins="plugins">
-              <div v-for="(msg, index) in letters.slice(0, limit)"
-                   :key="`${index}`"
-                   class="syw-event-wrap">
-                <h3>{{ msg.creator }}</h3>
-                <pre style="max-height:100px">{{ msg.content }}</pre>
-                <p class="mt-4"
-                    style="font-family: 'Sacramento', Arial, serif; font-size:13px;">
-                  {{ msg.createdAt }}
-                </p>
-              </div>
-            </flicking>
+                  :plugins="plugins">
+          <div v-for="(msg, index) in letters.slice(0, limit)"
+               :key="`${index}`"
+               class="syw-event-wrap"
+          >
+            <h3>{{ msg.creator }}</h3>
+            <pre class="p-1">{{ msg.content }}</pre>
+            <p class="mt-3 syw-created-at">{{ msg.createdAt }}</p>
           </div>
-        </div>
+        </flicking>
       </div>
     </div>
   </div>
@@ -56,7 +50,7 @@ export default {
       })
     };
     onMounted(getLetters);
-    const plugins = ref([new AutoPlay({duration: 4000, direction: "NEXT", stopOnHover: true})]);
+    const plugins = ref([new AutoPlay({duration: 6000, direction: "NEXT", stopOnHover: true})]);
     return {
       limit,
       letters,
@@ -68,8 +62,17 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/img_bg_3.jpg);
-  max-height: 400px;
+  height: 560px;
   /*background: rgba(0, 0, 0, .2);*/
+}
+
+.syw-created-at {
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-family: 'Sacramento', Arial, serif;
+  font-size: 15px;
 }
 
 .syw-event-wrap {
@@ -93,14 +96,22 @@ export default {
 }
 
 .syw-event-wrap span {
-  margin-top: 16px;
+  margin-top: 0px;
   display: block;
   color: rgba(255, 255, 255, .8);
 }
 
 .syw-event-wrap pre {
-  margin-top: 16px;
+  font-size: 18px;
+  margin-top: 0px;
   display: block;
   color: rgba(255, 255, 255, .8);
+  max-height:250px;
+
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 </style>
