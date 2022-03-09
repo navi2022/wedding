@@ -62,7 +62,7 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/img_bg_3.jpg);
-  height: 570px;
+  height: 560px;
   /*background: rgba(0, 0, 0, .2);*/
 }
 
@@ -107,7 +107,7 @@ export default {
   display: block;
   color: rgba(255, 255, 255, .8);
   max-height:250px;
-  
+
   white-space: pre-wrap;       /* css-3 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
   white-space: -pre-wrap;      /* Opera 4-6 */
