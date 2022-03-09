@@ -9,9 +9,9 @@
       </div>
       <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
         <div class="col">
-          <img class="w-100"
+          <img class="w-75"
                v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
-               v-on:click="showByTheme('studio')"
+               v-on:click="showByTheme('STUDIO')"
           />
           <h2>Studio</h2>
         </div>
@@ -142,7 +142,7 @@ export default {
       show();
     };
     const getImagesByTheme = (theme) => {
-      if (theme === 'studio') {
+      if (theme === 'STUDIO') {
         return [
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1239.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1053.jpg")},
@@ -188,12 +188,15 @@ export default {
   background: #FAFAD2
 }
 
-.syw-content-galleries {
+.syw-content-galleries h2 {
+  color: #5a5a5a;
+  font-family: "Sacramento", Arial, serif;
+  padding: 1.1rem ;
 }
 
 .syw-content-galleries div img {
   border-radius: 3rem;
-  max-height: 250px;
+  max-height: 330px;
 }
 
 </style>
