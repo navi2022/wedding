@@ -9,27 +9,26 @@
       </div>
       <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
         <div class="col">
-          <img class="w-75"
-               v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
+          <img v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
                v-on:click="showByTheme('STUDIO')"
           />
           <h2>Studio</h2>
         </div>
       </div>
       <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col-6">
-          <img class="w-100"
-               v-bind:src="require('@/assets/img/gallery/2018_2019/MAIN.jpg')"
+        <div class="col">
+          <img v-bind:src="require('@/assets/img/gallery/2018_2019/MAIN.jpg')"
                v-on:click="showByYear('2018-2019')"
           />
-          <h2>2019 - 2020</h2>
+          <h2 style="font-size: 15px">2019 - 2020</h2>
         </div>
-        <div class="col-6">
-          <img class="w-100"
-               v-bind:src="require('@/assets/img/gallery/2020_2021/MAIN.jpg')"
+      </div>
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col">
+          <img v-bind:src="require('@/assets/img/gallery/2020_2021/MAIN.jpg')"
                v-on:click="showByYear('2020-2021')"
           />
-          <h2>2020 - 2021</h2>
+          <h2 style="font-size: 15px">2020 - 2021</h2>
         </div>
       </div>
     </div>
@@ -189,14 +188,17 @@ export default {
 }
 
 .syw-content-galleries h2 {
-  color: #5a5a5a;
+  color: black;
   font-family: "Sacramento", Arial, serif;
-  padding: 1.1rem ;
+  font-size: 22px;
+  margin-top: 10px;
 }
 
 .syw-content-galleries div img {
-  border-radius: 3rem;
-  max-height: 330px;
+  margin-top: 5%;
+  border-radius: 6rem;
+  width: 270px;
+  height: 240px;
 }
 
 </style>

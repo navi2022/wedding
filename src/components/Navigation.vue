@@ -2,16 +2,16 @@
   <nav class="sticky-navi">
     <div class="row text-center">
       <div class="col">
-        <router-link to="/" class="router-link">Home</router-link>
+        <a href="/" class="router-link">Home</a>
       </div>
       <div class="col">
-        <router-link to="/weddingHall" class="router-link">ContactUs</router-link>
+        <a href="/weddingHall" class="router-link">ContactUs</a>
       </div>
       <div class="col">
-        <router-link to="/guestBook" class="router-link">GuestBook</router-link>
+        <a href="/guestBook" class="router-link">GuestBook</a>
       </div>
       <div class="col">
-        <router-link to="/gallery" class="router-link">Gallery</router-link>
+        <a href="/gallery" class="router-link">Gallery</a>
       </div>
     </div>
   </nav>
