@@ -1,6 +1,7 @@
 <template>
   <greeting></greeting>
   <about-us></about-us>
+  <our-story></our-story>
   <contact-us></contact-us>
   <wedding-hall></wedding-hall>
   <recent-letters></recent-letters>
@@ -10,6 +11,7 @@
 <script>
 import Greeting from "@/components/Greeting";
 import AboutUs from "@/components/AboutUs";
+import OurStory from "@/components/OurStory";
 import ContactUs from "@/components/ContactUs";
 import WeddingHall from "@/components/WeddingHall";
 import Gallery from "@/components/Gallery";
@@ -18,7 +20,7 @@ import WriteLetter from "@/components/letter/WriteLetter";
 
 export default {
   name: 'Main',
-  components: {Greeting, AboutUs, ContactUs, WeddingHall, RecentLetters, WriteLetter, Gallery}
+  components: {Greeting, AboutUs, OurStory, ContactUs, WeddingHall, RecentLetters, WriteLetter, Gallery}
 };
 </script>
 
