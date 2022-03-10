@@ -1,5 +1,5 @@
 <template>
-  <div class="syw-section syw-cover">
+  <div class="syw-section syw-gallery-bg">
     <div class="container">
       <div class="col syw-section-head text-center">
         <span>we love each other</span>

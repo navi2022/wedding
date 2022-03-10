@@ -61,21 +61,21 @@ export default {
 };
 </script>
 <style scoped>
-.syw-contactus-bg {
-  position: relative;
-}
-.syw-contactus-bg::after {
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(~@/assets/img/flowers-yellow.jpeg);
-  width: 100%;
-  height: 100%;
-  opacity : 0.5;
-  z-index: -1;
-}
+/*.syw-contactus-bg {*/
+/*  position: relative;*/
+/*}*/
+/*.syw-contactus-bg::after {*/
+/*  content : "";*/
+/*  display: block;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  background-image: url(~@/assets/img/flowers-yellow.jpeg);*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  opacity : 0.5;*/
+/*  z-index: -1;*/
+/*}*/
 .font-himelody{
   font-family: 'Hi Melody', cursive !important;
 }
