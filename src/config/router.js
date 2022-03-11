@@ -1,29 +1,25 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import Main from "@/components/Main";
-import WeddingHall from "@/components/WeddingHall";
+import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
 import GuestBook from "@/components/GuestBook";
 
 const routes = [
     {
         path: '/',
-        name: 'Main',
         component: Main
     },
     {
-        path: '/weddingHall',
-        name: 'WeddingHall',
-        component: WeddingHall
-    },
-    {
-        path: '/gallery',
-        name: 'Gallery',
-        component: Gallery
+        path: '/contact',
+        component: Contact
     },
     {
         path: '/guestBook',
-        name: 'GuestBook',
         component: GuestBook
+    },
+    {
+        path: '/gallery',
+        component: Gallery
     }
 ]
 
