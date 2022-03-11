@@ -9,38 +9,38 @@
           <div class="col-md-12 col-md-offset-0">
             <ul class="timeline animate-box">
               <li class="animate-box">
-                <div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+                <div class="timeline-badge first-meet-bg"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3 class="timeline-title">First We Meet</h3>
                     <span class="date">December 25, 2015</span>
                   </div>
                   <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p>티몬 스터디하면서 처음 만났습니다.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted animate-box">
-                <div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+                <div class="timeline-badge first-date-bg"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3 class="timeline-title">First Date</h3>
                     <span class="date">December 28, 2015</span>
                   </div>
                   <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p>처음 데이트 한날</p>
                   </div>
                 </div>
               </li>
               <li class="animate-box">
-                <div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+                <div class="timeline-badge relationship-bg"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3 class="timeline-title">In A Relationship</h3>
                     <span class="date">January 1, 2016</span>
                   </div>
                   <div class="timeline-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p>만나서 사귀는 날</p>
                   </div>
                 </div>
               </li>
@@ -52,7 +52,7 @@
 </template>
 <script>
 export default {
-  name: 'AboutUs'
+  name: 'OurStory'
 };
 </script>
 <style scoped>
@@ -155,6 +155,19 @@ export default {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
+.first-meet-bg {
+  background-image:url(~@/assets/img/first-we-meet.png);
+}
+
+.first-date-bg {
+  background-image:url(~@/assets/img/first-date.jpg);
+}
+
+.relationship-bg {
+  background-image:url(~@/assets/img/in-a-relationship.jpeg);
+}
+
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
     width: 60px;

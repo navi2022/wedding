@@ -5,7 +5,7 @@
         <router-link to="/" class="router-link">Home</router-link>
       </div>
       <div class="col">
-        <router-link to="/weddingHall" class="router-link">ContactUs</router-link>
+        <router-link to="/weddingHall" class="router-link">Hall</router-link>
       </div>
       <div class="col">
         <router-link to="/guestBook" class="router-link">GuestBook</router-link>
