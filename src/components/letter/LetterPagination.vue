@@ -7,15 +7,18 @@
           <h2 style="color: white">Guest Book</h2>
         </div>
       </div>
-      <a-list class="animate__animated animate__slow animate__fadeIn" item-layout="vertical" size="large" :pagination="pagination" :data-source="letters">
+      <a-list class="animate__animated animate__slow animate__fadeIn text-center"
+              item-layout="vertical"
+              show-less-items
+              :pagination="pagination"
+              :data-source="letters">
         <template #renderItem="{ item }">
           <a-list-item key="item.id">
-            <template #extra>
-              <pre class="syw-letter-content-text syw-letter-pagination-content">{{ item.content }}</pre>
-            </template>
-            <a-list-item-meta :description="item.createdAt">
+            <a-list-item-meta>
               <template #title>
-                <span class="syw-letter-content-text">From : {{ item.creator }}</span>
+                <pre class="syw-letter-content-text syw-letter-pagination-content" >{{ item.content }}</pre>
+                <div class="syw-letter-content-text">From: {{ item.creator }}</div>
+                <div class="syw-letter-content-text">At: {{ item.createdAt }}</div>
               </template>
             </a-list-item-meta>
           </a-list-item>
@@ -50,7 +53,7 @@ export default {
     ];
     const letters = ref([]);
     const loading = ref(false);
-    const pagination = ref({pageSize: 2});
+    const pagination = ref({pageSize: 1, size:"small", showLessItems:false});
     onMounted(() => {
       loading.value = true;
       const url = "https://seungmin-yikyung.duckdns.org/api/wedding/letters"
@@ -79,13 +82,15 @@ export default {
 }
 
 .syw-letter-pagination-content {
-  width: 240px;
-  max-height: 180px;
-  overflow: auto;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .syw-letter-content-text {
-  font-size: 22px;
+  font-size: 17px;
   color: white;
   font-family: 'Hi Melody', cursive;
 }
