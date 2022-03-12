@@ -9,6 +9,7 @@
               <div class="col syw-section-head text-center">
                 <h2>The Wedding</h2>
                 <span class="simply-date">{{ getWeddingDateTime() }}</span>
+                <span class="simply-date" style="font-size: 14px;">서울 강남구 봉은사로 637 노블발렌티 (삼성점)</span>
               </div>
             </div>
             <div class="custum-heart">
@@ -36,7 +37,7 @@ export default {
 
       return weddingDateTime.value.getFullYear()
           + ".0" + (weddingDateTime.value.getMonth() + 1)
-          + "." + weddingDateTime.value.getDate() + " " + formHour + "시 ";
+          + "." + weddingDateTime.value.getDate() + " 토요일 " + formHour + "시 ";
     }
     const diff = ref({
       day: Number,
@@ -186,7 +187,8 @@ export default {
 
 .simply-date {
   /*color: rgba(255, 255, 255, 0.7);*/
-  font-size: 20px !important;
+  /*font-size: 20px !important;*/
+  font-size: 20px;
   display: block;
   color: white !important;
   font-family: "Sacramento", Arial, serif;
