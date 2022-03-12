@@ -58,7 +58,6 @@ export default {
       loading.value = true;
       const url = "https://seungmin-yikyung.duckdns.org/api/wedding/letters"
       axios.get(url).then((response) => {
-        console.log(response);
         letters.value = response.data;
         loading.value = false;
 

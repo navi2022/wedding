@@ -118,7 +118,6 @@ export default {
     const submit = () => {
       if (isValidName()
           && isValidContent()) {
-        console.log("Sending!!!");
         const url = "https://seungmin-yikyung.duckdns.org/api/wedding/letters"
         const letter = {
           "creator": nameInfo.value.name,
@@ -128,7 +127,9 @@ export default {
         axios.put(url, letter).then((response) => {
           alert("감사합니다.")
           router.go();
-          console.log(response);
+          if (!response) {
+            console.log(response);
+          }
         }).catch((Error) => {
           console.log(Error);
         })
