@@ -1,4 +1,4 @@
-# wedding
+# Vue wedding-ui
 
 ## package.json features
 
@@ -9,9 +9,6 @@
   * https://animate.style/
 * vue3-naver-maps
   * https://libraries.io/npm/vue3-naver-maps
-* magnific-popups - 오래되었고 jQuery 기반이라 쓰지 말자...
-  * https://dimsemenov.com/plugins/magnific-popup/
-  * https://dimsemenov.com/plugins/magnific-popup/documentation.html
 
 ## Project setup
 ```
@@ -23,15 +20,10 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Server PM2 commands
 ```
-npm run build
+pm2 ps
+pm2 start npm --name "Wedding" -- start
+pm2 delete Wedding
+pm2 logs
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
