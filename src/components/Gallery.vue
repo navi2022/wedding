@@ -185,7 +185,8 @@ export default {
 <style scoped>
 .syw-gallery-bg {
   /* background: #FAFAD2 */
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
+  background-image: url(~@/assets/img/wood-brown-bg.webp);
 }
 
 .syw-content-galleries h2 {
