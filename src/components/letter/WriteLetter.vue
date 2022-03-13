@@ -161,7 +161,7 @@ export default {
   left: 0;
   width: 100%; 
   height: 100%;  
-  opacity: .2; 
+  opacity: .3; 
   z-index: -1;
   background-image: url(~@/assets/img/flowers-pink.jpeg);
 }

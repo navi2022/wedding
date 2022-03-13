@@ -64,7 +64,7 @@ export default {
   /* background-image: url(~@/assets/img/img_bg_1.jpg); */
   height: 560px;
   /* background: #f7accc; */
-  background: #f18cb8;
+  background: #f7c5db;
   /* background: rgba(134, 4, 95, 0.582); */
 }
 
