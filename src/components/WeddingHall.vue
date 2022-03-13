@@ -17,7 +17,7 @@
           <p><strong>서울시 강남구 봉은사로 637 (서울시 강남구 삼성동 109-6)</strong></p>
           <p><strong>Tel: 02-540-0711~3</strong></p>
         </div>
-        <div class="p-2">
+        <div class="p-4">
           <naver-maps
               width="100%"
               height="300px"

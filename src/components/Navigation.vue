@@ -4,9 +4,9 @@
       <div class="col">
         <a href="/" class="router-link">Home</a>
       </div>
-      <div class="col">
-        <a href="/contact" class="router-link">Contact</a>
-      </div>
+<!--      <div class="col">-->
+<!--        <a href="/contact" class="router-link">Contact</a>-->
+<!--      </div>-->
       <div class="col">
         <a href="/guestBook" class="router-link">GuestBook</a>
       </div>

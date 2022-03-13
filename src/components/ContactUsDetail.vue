@@ -3,19 +3,21 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center syw-contactus-head-color">
-          <h2>Contact Our Family</h2>
+          <h2>Contact Us</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
+      <div
+          class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
         <div class="col-6 desc">
-          <h3 class="font-himelody">이승민</h3>
+          <h2 class="font-himelody">신랑 이승민</h2>
           <div>
             <strong class="font-himelody">연락처: {{ seungminInfo.phone }}</strong>
             <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.phone' v-clipboard:success="onCopy"></i>
           </div>
           <div>
             <strong class="font-himelody">{{ seungminInfo.bank }}: {{ seungminInfo.account }}</strong>
-            <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.bankAccount' v-clipboard:success="onCopy"></i>
+            <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.bankAccount'
+               v-clipboard:success="onCopy"></i>
           </div>
           <div>
             <a :href="seungminInfo.telHref">
@@ -31,14 +33,15 @@
           </div>
         </div>
         <div class="col-6 desc">
-          <h3 class="font-himelody">강이경</h3>
+          <h2 class="font-himelody">신부 강이경</h2>
           <div>
             <strong class="font-himelody">연락처: {{ yikyungInfo.phone }}</strong>
             <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.phone' v-clipboard:success="onCopy"></i>
           </div>
           <div>
             <strong class="font-himelody">{{ yikyungInfo.bank }}: {{ yikyungInfo.account }}</strong>
-            <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.bankAccount' v-clipboard:success="onCopy"></i>
+            <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.bankAccount'
+               v-clipboard:success="onCopy"></i>
           </div>
           <div>
             <a :href="yikyungInfo.telHref">
@@ -55,84 +58,76 @@
         </div>
       </div>
 
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
+      <div
+          class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
         <div class="col-6 desc">
-          <h3 class="font-himelody">이평호</h3>
+          <h2 class="font-himelody">신랑측 혼주</h2>
           <div>
-            <strong class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</strong>
-            <i class="bi bi-clipboard" v-clipboard:copy='seungminFatherInfo.phone' v-clipboard:success="onCopy"></i>
-          </div>
-          <div>
-            <a :href="seungminFatherInfo.telHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-telephone-fill syw-contactus-icon"></i>
-              </span>
-            </a>
-            <a :href="seungminFatherInfo.smsHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="col-6 desc">
-          <h3 class="font-himelody">강재규</h3>
-          <div>
-            <strong class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</strong>
-            <i class="bi bi-clipboard" v-clipboard:copy='yikyungFatherInfo.phone' v-clipboard:success="onCopy"></i>
-          </div>
-          <div>
-            <a :href="yikyungFatherInfo.telHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-telephone-fill syw-contactus-icon"></i>
-              </span>
-            </a>
-            <a :href="yikyungFatherInfo.smsHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
-        <div class="col-6 desc">
-          <h3 class="font-himelody">손무선</h3>
-          <div>
+            <h4 class="font-himelody">아버지 이평호</h4>
+            <strong class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</strong>
+            <div>
+              <a :href="seungminFatherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="seungminFatherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
+
+            <h4 class="font-himelody">어머니 손무선</h4>
             <strong class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</strong>
-            <i class="bi bi-clipboard" v-clipboard:copy='seungminMotherInfo.phone' v-clipboard:success="onCopy"></i>
-          </div>
-          <div>
-            <a :href="seungminFatherInfo.telHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-telephone-fill syw-contactus-icon"></i>
-              </span>
-            </a>
-            <a :href="seungminFatherInfo.smsHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
-              </span>
-            </a>
+            <div>
+              <a :href="seungminMotherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="seungminMotherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-6 desc">
-          <h3 class="font-himelody">박정희</h3>
+          <h2 class="font-himelody">신부측 혼주</h2>
           <div>
+
+            <h4 class="font-himelody">아버지 강재규</h4>
+            <strong class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</strong>
+            <div>
+              <a :href="yikyungFatherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="yikyungFatherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
+
+            <h4 class="font-himelody">어머니 박정희</h4>
             <strong class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</strong>
-            <i class="bi bi-clipboard" v-clipboard:copy='yikyungMotherInfo.phone' v-clipboard:success="onCopy"></i>
-          </div>
-          <div>
-            <a :href="yikyungMotherInfo.telHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-telephone-fill syw-contactus-icon"></i>
-              </span>
-            </a>
-            <a :href="yikyungMotherInfo.smsHref">
-              <span class=syw-contactus-icon>
-                <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
-              </span>
-            </a>
+            <div>
+              <a :href="yikyungMotherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="yikyungMotherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -212,6 +207,7 @@ export default {
 
   /* font-weight: 900; */
 }
+
 
 .syw-contactus-icon.font-himelody {
   color: #fff;
