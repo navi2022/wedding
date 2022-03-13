@@ -48,7 +48,8 @@
                   <span class="date">Feburary 2018</span>
                 </div>
                 <div class="timeline-body">
-                  <p>스터디를 하면서 처음 알게되었습니다. 동갑이였고, 친화적인 스터디 분위기와 몇몇 뒷풀이 자리에서 자연스럽게 친구가 되었습니다.</p>
+                  <p>사내 스터디를 진행하면서 처음 만났습니다.</p>
+                  <p>동갑이면서 서로 친화적인 성격 덕분에 자연스럽게 가까워졌습니다.</p>
                 </div>
               </div>
             </li>
@@ -56,11 +57,12 @@
               <div class="timeline-badge first-date-bg"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3 class="timeline-title">First Date</h3>
+                  <h3 class="timeline-title">First Dating</h3>
                   <span class="date">November 2018</span>
                 </div>
                 <div class="timeline-body">
-                  <p>스터디 멤버의 벤드 공연을 참석했다가 돌아오는 길에 신랑이 주말에 가지볶음을 같이 먹으러가자고 했습니다. 주말에 사적으로 만나 중국집에서 가지볶음을 먹고, 영화 [보헤미안 랩소디] 를 봤던것이 생각해보면 첫번째 데이트였습니다.</p>
+                  <p>스터티를 빌미로 만나 중국 가정음식 맛집에서 가지 볶음을 맛있게 먹었습니다.</p>
+                  <p>식사 후 영화 한 편을 보았고, 영화 [보헤미안 랩소디]는 우리가 함께한 첫 영화가 되었습니다.</p>
                 </div>
               </div>
             </li>
@@ -72,9 +74,8 @@
                   <span class="date">December 2018</span>
                 </div>
                 <div class="timeline-body">
-                  <p>
-                    크리스마스이브에 이태원에서 하는 재즈 공연을 같이 보러갔고, 신랑이 깜짝 이벤트를 준비했습니다. 이 때 이후로 썸타는 친구에서 남자친구/여자친구가 된 계기가 되었습니다.
-                  </p>
+                  <p>크리스마스이브에 이태원 Jazz 공연에 갔고, 신랑이 깜짝 케이크 이벤트를 준비했습니다.</p>
+                  <p>이후 우리의 관계는 공식적인 연인 관계가 되었습니다.</p>
                 </div>
               </div>
             </li>
@@ -331,7 +332,7 @@ export default {
 }
 
 .relationship-bg {
-  background-image:url(~@/assets/img/in-a-relationship.jpeg);
+  background-image:url(~@/assets/img/first-official-date.jpg);
 }
 
 @media screen and (max-width: 480px) {
