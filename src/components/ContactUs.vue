@@ -21,12 +21,9 @@
                 <i class="bi bi-chat-text-fill"></i>
               </span>
             </a>
-            <span class=syw-contactus-icon>
-              <p><strong class="font-himelody">계좌</strong></p>
+            <span class="syw-contactus-icon font-himelody">
+              계좌
             </span>
-            <!-- <span class=syw-contactus-icon>
-              <p><strong class="font-himelody">pay</strong></p>
-            </span> -->
           </div>
         </div>
         <div class="col-6 desc">
@@ -43,8 +40,8 @@
                 <i class="bi bi-chat-text-fill"></i>
               </span>
             </a>
-            <span class=syw-contactus-icon>
-              <p><strong class="font-himelody">계좌</strong></p>
+            <span class="syw-contactus-icon font-himelody">
+              계좌
             </span>
             <!-- <span class=syw-contactus-icon>
               <p><strong class="font-himelody">pay</strong></p>
@@ -79,7 +76,7 @@ export default {
 }
 
 .syw-section-head h2, .syw-contactus-head-color {
-  color:  #9034bb;
+  /* color:  #9034bb; */
   text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
@@ -90,16 +87,22 @@ export default {
 .font-himelody {
   font-family: 'Hi Melody', cursive !important;
   color: #333333;
+  
   /* font-weight: 900; */
+}
+
+.syw-contactus-icon.font-himelody {
+  color: #fff;
 }
 
 .syw-contactus-icon {
   float: left;
   /*margin-right: 5%;*/
   margin: 5%;
-  width: 40px;
-  height: 40px;
-  background: rgb(248, 246, 248);
+  width: 30px;
+  height: 30px;
+  /* background: rgb(248, 246, 248); */
+  background: #F14E95;
   display: table;
   text-align: center;
   justify-content: center;
@@ -114,13 +117,16 @@ export default {
 .syw-contactus-icon i {
   display: table-cell;
   vertical-align: middle;
-  font-size: 25px;
-  color: #333333;
+  font-size: 15px;
+  color: #fff;
+  /* color: #333333; */
+  /* color: #F14E95; */
 }
 .syw-contactus-icon p {
   display: table-cell;
   vertical-align: middle;
-  color: #333333;
+  color: #fff;
+  /* color: #333333; */
 }
 .col-6 > a {
   text-align: center;
