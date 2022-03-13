@@ -2,7 +2,7 @@
   <div class="syw-section syw-aboutus-template syw-aboutus-bg">
     <div class="container">
       <div class="col syw-section-head text-center syw-aboutus-head-color">
-        <!-- <span>We invite you</span> -->
+        <span>We love each other</span>
         <h2>About Us</h2>
       </div>
       <div class="couple-wrap animate-box">

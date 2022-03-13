@@ -1,10 +1,10 @@
 <template>
   <div class="syw-section syw-gallery-bg">
     <div class="container">
-      <div class="col syw-section-head text-center">
+      <!-- <div class="col syw-section-head text-center">
         <span>we love each other</span>
         <h2>Our Story</h2>
-      </div>
+      </div> -->
       <div class="row">
           <div class="col-md-12 col-md-offset-0">
             <ul class="timeline animate-box">
