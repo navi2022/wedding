@@ -150,9 +150,20 @@ export default {
 </script>
 <style scoped>
 .syw-write-letter-bg {
-  /*background-image: url(~@/assets/img/img_bg_3.jpg);*/
-  background-color: #FFE3EE;
-  /*background: rgba(0, 0, 0, 0.03);*/
+  position: relative;
+  z-index: 1;
+}
+
+.syw-write-letter-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .2; 
+  z-index: -1;
+  background-image: url(~@/assets/img/flowers-pink.jpeg);
 }
 
 .is-invalid {

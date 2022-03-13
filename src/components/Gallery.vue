@@ -184,7 +184,8 @@ export default {
 </script>
 <style scoped>
 .syw-gallery-bg {
-  background: #FAFAD2
+  /* background: #FAFAD2 */
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .syw-content-galleries h2 {

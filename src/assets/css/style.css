@@ -31,11 +31,6 @@ p, ul, ol {
   height: 800px;
   width: 100%;
   background-size: cover;
-  position: relative;
-}
-
-.syw-cover .syw-header {
-  height: 534px;
 }
 
 @media screen and (max-width: 768px) {

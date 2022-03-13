@@ -1,16 +1,16 @@
 <template>
-  <div class="syw-section syw-cover">
+  <div class="syw-section syw-aboutus-template syw-aboutus-bg">
     <div class="container">
-      <div class="col syw-section-head text-center">
-        <span>we invited you to celebrate our wedding</span>
-        <h2>Hello!</h2>
+      <div class="col syw-section-head text-center syw-aboutus-head-color">
+        <!-- <span>We invite you</span> -->
+        <h2>About Us</h2>
       </div>
       <div class="couple-wrap animate-box">
         <div class="couple-half">
           <div class="groom">
             <img src="~@/assets/img/groom.png" alt="groom" class="syw-img-responsive">
           </div>
-          <div class="row syw-section-content syw-section-white-bg text-center">
+          <div class="row syw-section-content text-center">
             <div class="desc">
               <h3>이승민</h3>
               <p><strong>존잘, 스마트, 귀여움</strong></p>
@@ -22,10 +22,10 @@
           <div class="bride">
             <img src="~@/assets/img/bride.png" alt="bride" class="syw-img-responsive">
           </div>
-          <div class="row syw-section-content syw-section-white-bg text-center">
+          <div class="row syw-section-content text-center">
             <div class="desc">
               <h3>강이경</h3>
-              <p><strong>빵빵, 인간적</strong></p>
+              <p><strong></strong></p>
             </div>
           </div>
         </div>
@@ -40,6 +40,24 @@ export default {
 </script>
 <style scoped>
 /* 이하 클래스는 about-us 에서 사용 */
+.syw-section-head h2, .syw-aboutus-head-color {
+  color: gray;
+  text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+}
+
+.syw-aboutus-bg {
+  background: rgba(0, 0, 0, 0.04);
+}
+.syw-aboutus-template {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  background-size: cover;
+}
 .syw-img-responsive {
   display: block;
   max-width: 100%;
@@ -69,7 +87,7 @@ export default {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: rgb(220,20,60);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -92,7 +110,7 @@ export default {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  /* color: #F14E95; */
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {

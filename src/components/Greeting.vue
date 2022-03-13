@@ -35,7 +35,7 @@ export default {
       const formHour = (hours <= 12) ? "오전 " + hours : "오후 " + (hours - 12);
 
       return weddingDateTime.value.getFullYear()
-          + ".0" + weddingDateTime.value.getMonth() + 1
+          + ".0" + (weddingDateTime.value.getMonth() + 1)
           + "." + weddingDateTime.value.getDate() + " " + formHour + "시 ";
     }
     const diff = ref({
@@ -84,7 +84,7 @@ export default {
 </script>
 <style scoped>
 .syw-greeting-background {
-  background-image: url(~@/assets/img/flowers.jpeg);
+  background-image: url(~@/assets/img/gallery/studio/IMG_1053.jpg);
   background-position: 0px 0px;
 }
 

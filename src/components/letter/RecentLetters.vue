@@ -61,7 +61,7 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  background-image: url(~@/assets/img/img_bg_3.jpg);
+  background-image: url(~@/assets/img/img_bg_1.jpg);
   height: 560px;
   /*background: rgba(0, 0, 0, .2);*/
 }
