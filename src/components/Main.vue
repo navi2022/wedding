@@ -2,8 +2,8 @@
   <greeting></greeting>
   <about-us></about-us>
   <our-story></our-story>
-  <contact-us></contact-us>
   <wedding-hall></wedding-hall>
+  <contact-us></contact-us>
   <recent-letters></recent-letters>
   <write-letter></write-letter>
   <gallery></gallery>
