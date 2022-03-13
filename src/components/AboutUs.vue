@@ -106,7 +106,7 @@ export default {
   margin: 0 auto;
   position: relative;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
   .couple-wrap {
     width: 100%;
   }
@@ -130,7 +130,7 @@ export default {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
   .heart {
     display: none;
   }
@@ -140,7 +140,7 @@ export default {
   width: 50%;
   float: left;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
   .couple-half {
     width: 100%;
   }
@@ -167,7 +167,7 @@ export default {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
   .couple-half .groom, .couple-half .bride {
     width: 100%;
     height: 140px;
@@ -194,7 +194,7 @@ export default {
   padding-left: 180px;
   text-align: left;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 350px) {
   .couple-half .groom, .couple-half .bride {
     margin-left: 0;
     margin-right: 0;
