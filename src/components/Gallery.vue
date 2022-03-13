@@ -7,33 +7,55 @@
           <h2>Gallery</h2>
         </div>
       </div>
-      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col">
-          <img v-bind:src="require('@/assets/img/gallery/studio/IMG_MAIN.jpg')"
-               v-on:click="showByTheme('STUDIO')"
-          />
-          <h2>Studio</h2>
-        </div>
+      <div class="row text-center animate__animated animate__slow animate__fadeIn">
+        <flicking
+            :options="{circular: true,
+                      horizontal: true,
+                      renderOnlyVisible: false
+                      }"
+            :plugins="plugins">
+          <img v-for="(img, index) in getImagesByTheme('STUDIO')"
+               :key="`${index}`"
+               :src="img.src"
+               @click="showImage(img)"
+               class="syw-content-galleries-flicking"
+          >
+        </flicking>
+        <h2 class="syw-section-head">Studio</h2>
       </div>
-      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col">
-          <img v-bind:src="require('@/assets/img/gallery/2018_2019/MAIN.jpg')"
-               v-on:click="showByYear('2018-2019')"
-          />
-          <h2 style="font-size: 15px;font-weight: bold">2019 - 2020</h2>
-        </div>
+      <div class="row text-center animate__animated animate__slow animate__fadeIn">
+        <flicking
+            :options="{circular: true,
+                      horizontal: true,
+                      renderOnlyVisible: false}"
+            :plugins="plugins">
+          <img v-for="(img, index) in getImagesByYear('2018-2019')"
+               :key="`${index}`"
+               :src="img.src"
+               @click="showImage(img)"
+               class="syw-content-galleries-flicking"
+          >
+        </flicking>
+        <h2 class="syw-section-head">2018-2019</h2>
       </div>
-      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col">
-          <img v-bind:src="require('@/assets/img/gallery/2020_2021/MAIN.jpg')"
-               v-on:click="showByYear('2020-2021')"
-          />
-          <h2 style="font-size: 15px; font-weight: bold">2020 - 2021</h2>
-        </div>
+      <div class="row text-center animate__animated animate__slow animate__fadeIn">
+        <flicking
+            :options="{circular: true,
+                      horizontal: true,
+                      renderOnlyVisible: false}"
+            :plugins="plugins">
+          <img v-for="(img, index) in getImagesByYear('2020-2021')"
+               :key="`${index}`"
+               :src="img.src"
+               @click="showImage(img)"
+               class="syw-content-galleries-flicking"
+          >
+        </flicking>
+        <h2 class="syw-section-head">2020-2021</h2>
       </div>
     </div>
     <vue-easy-lightbox
-        escDisabled
+        escEnabled
         moveDisabled
         :visible="visible"
         :imgs="imgs"
@@ -44,12 +66,16 @@
   </div>
 </template>
 <script>
+import Flicking from "@egjs/vue3-flicking";
+import {Parallax} from "@egjs/flicking-plugins";
+import "@egjs/flicking-plugins/dist/flicking-plugins.css";
+
 import VueEasyLightbox from 'vue-easy-lightbox'
 import {ref} from "vue";
 
 export default {
   name: 'Gallery',
-  components: {VueEasyLightbox},
+  components: {VueEasyLightbox, Flicking},
   setup: function () {
     const visible = ref(false);
     const imgs = ref([]);
@@ -60,8 +86,8 @@ export default {
     const hide = () => {
       visible.value = false;
     };
-    const showByYear = (year) => {
-      imgs.value = getImagesByYear(year);
+    const showImage = (image) => {
+      imgs.value = [image];
       show();
     };
     const getImagesByYear = (year) => {
@@ -69,12 +95,12 @@ export default {
         return [
           {title: '', src: require("@/assets/img/gallery/2018_2019/20181216_211827.jpg")},
           {title: '', src: require("@/assets/img/gallery/2018_2019/20181225_182052.jpg")},
-          {title: '', src: require("@/assets/img/gallery/2018_2019/20181225_183304.jpg")},
+          // {title: '', src: require("@/assets/img/gallery/2018_2019/20181225_183304.jpg")},
           {title: '', src: require("@/assets/img/gallery/2018_2019/20181231_192648.jpg")},
           {title: '', src: require("@/assets/img/gallery/2018_2019/20181231_215158.jpg")},
 
           {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211232.jpg")},
-          {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211246.jpg")},
+          // {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211246.jpg")},
           {title: '', src: require("@/assets/img/gallery/2018_2019/20190713_211253.jpg")},
           {title: '', src: require("@/assets/img/gallery/2018_2019/20190714_203336.jpg")},
           {title: '', src: require("@/assets/img/gallery/2018_2019/20190719_220713.jpg")},
@@ -107,7 +133,7 @@ export default {
       if (year === '2020-2021') {
         return [
           {title: '', src: require("@/assets/img/gallery/2020_2021/MAIN.jpg")},
-          {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134135.jpg")},
+          // {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134135.jpg")},
           {title: '', src: require("@/assets/img/gallery/2020_2021/20200123_134140.jpg")},
           {title: '', src: require("@/assets/img/gallery/2020_2021/20200229_155514.jpg")},
           {title: '', src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
@@ -136,10 +162,6 @@ export default {
       }
       return [];
     }
-    const showByTheme = (theme) => {
-      imgs.value = getImagesByTheme(theme);
-      show();
-    };
     const getImagesByTheme = (theme) => {
       if (theme === 'STUDIO') {
         return [
@@ -161,23 +183,19 @@ export default {
           {title: '', src: require("@/assets/img/gallery/studio/IMG_0985.jpg")},
         ];
       }
-      if (theme === 'travel') {
-        return [
-          {title: '', src: require("@/assets/img/gallery/theme/tmon_1.jpg")},
-        ];
-      }
       return [];
     }
+    const plugins = ref([new Parallax({})]);
     return {
       visible,
       imgs,
       index,
       show,
       hide,
-      showByYear,
+      showImage,
       getImagesByYear,
-      showByTheme,
-      getImagesByTheme
+      getImagesByTheme,
+      plugins
     };
   }
 };
@@ -216,6 +234,14 @@ export default {
   border-radius: 6rem;
   width: 270px;
   height: 240px;
+}
+
+.syw-content-galleries-flicking{
+  margin-top: 3%;
+  padding: 1px;
+  border: 1px solid white;
+  width: 83%;
+  height: 300px;
 }
 
 </style>
