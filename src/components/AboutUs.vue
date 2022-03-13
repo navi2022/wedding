@@ -13,8 +13,10 @@
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
-                <span class="font-hi-melody_20px">신랑</span><h3>이승민</h3>
-                <p class="font-hi-melody_20px">신부의 인간적이고 재미난 성격에 호감이 생겼고, 귀엽고 본인을 좋아해주는 것에 신부와 결혼하고 싶었습니다. </p>
+                <span class="syw-font-hi-melody">신랑</span>
+                <h3>이승민</h3>
+                <p class="syw-font-hi-melody">신부의 귀여운 외모와 재미있는 성격에 호감이 갔습니다.</p>
+                <p class="syw-font-hi-melody">저를 진심으로 사랑하는 모습에서 결혼을 결심하게 되었습니다.</p>
               </div>
             </div>
           </div>
@@ -25,8 +27,10 @@
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
-                <span class="font-hi-melody_20px">신부</span><h3>강이경</h3>
-                <p class="font-hi-melody_20px">신랑의 귀엽고 유쾌한 성격에 호감이 생겼고, 함께 하면 시간가는 줄 모를 정도로 즐거움에 신랑과 결혼하고 싶었습니다.</p>
+                <span class="syw-font-hi-melody">신부</span>
+                <h3>강이경</h3>
+                <p class="syw-font-hi-melody">신랑의 귀엽고 유쾌한 성격에 호감이 생겼습니다.</p>
+                <p class="syw-font-hi-melody">함께 하는 시간이 너무나 즐겁다 보니 어느새 결혼을 맹세하게 되었습니다.</p>
               </div>
             </div>
           </div>
@@ -89,9 +93,9 @@ export default {
 <style scoped>
 /* 이하 클래스는 about-us 에서 사용 */
 
-.font-hi-melody_20px {
+.syw-font-hi-melody {
   font-family: 'Hi Melody', cursive;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .syw-section-head h2, .syw-aboutus-head-color {
