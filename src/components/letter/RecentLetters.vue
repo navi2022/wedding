@@ -60,20 +60,19 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  /* background-image: url(~@/assets/img/img_bg_1.jpg); */
+  background-image: url(~@/assets/img/wood-black-bg.jpeg);
+  opacity: 0.6;
   height: 560px;
   /* background: #f7accc; */
-  background: #f7c5db;
   /* background: rgba(134, 4, 95, 0.582); */
 }
 
 .syw-created-at {
   color: #fff;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   letter-spacing: 2px;
   font-family: 'Sacramento', Arial, serif;
-  font-size: 15px;
 }
 
 .syw-event-wrap {
@@ -91,24 +90,21 @@ export default {
   color: rgba(255, 255, 255, 1);
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
   display: block;
-  text-transform: uppercase;
   padding: 5px;
   letter-spacing: 5px;
-  
 }
 
 .syw-event-wrap span {
-  margin-top: 0px;
   display: block;
   color: rgba(255, 255, 255, .8);
 }
 
 .syw-event-wrap pre {
-  font-size: 18px;
-  margin-top: 0px;
+  font-size: 19px;
+  font-weight: bold;
   display: block;
-  color: rgba(255, 255, 255, .8);
-  max-height:250px;
+  color: rgba(255, 255, 255, 1.0);
+  max-height: 250px;
 
   white-space: pre-wrap;       /* css-3 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
