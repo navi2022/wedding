@@ -20,7 +20,7 @@
           <img v-bind:src="require('@/assets/img/gallery/2018_2019/MAIN.jpg')"
                v-on:click="showByYear('2018-2019')"
           />
-          <h2 style="font-size: 15px">2019 - 2020</h2>
+          <h2 style="font-size: 18px;font-weight: bold">2019 - 2020</h2>
         </div>
       </div>
       <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
@@ -28,7 +28,7 @@
           <img v-bind:src="require('@/assets/img/gallery/2020_2021/MAIN.jpg')"
                v-on:click="showByYear('2020-2021')"
           />
-          <h2 style="font-size: 15px">2020 - 2021</h2>
+          <h2 style="font-size: 18px; font-weight: bold">2020 - 2021</h2>
         </div>
       </div>
     </div>
@@ -152,9 +152,9 @@ export default {
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1341.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_1361.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_0427.jpg")},
-          {title: '', src: require("@/assets/img/gallery/studio/IMG_0459.jpg")},
+          // {title: '', src: require("@/assets/img/gallery/studio/IMG_0459.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_0543.jpg")},
-          {title: '', src: require("@/assets/img/gallery/studio/IMG_0657.jpg")},
+          // {title: '', src: require("@/assets/img/gallery/studio/IMG_0657.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_0801.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_0829.jpg")},
           {title: '', src: require("@/assets/img/gallery/studio/IMG_0921.jpg")},
