@@ -22,12 +22,12 @@
           <div>
             <a :href="seungminInfo.telHref">
               <span class=syw-contactus-icon>
-                <i class="bi bi-telephone-fill"></i>
+                <i class="bi bi-telephone-fill syw-contactus-icon"></i>
               </span>
             </a>
             <a :href="seungminInfo.smsHref">
               <span class=syw-contactus-icon>
-                <i class="bi bi-chat-text-fill"></i>
+                <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
               </span>
             </a>
           </div>
@@ -46,12 +46,12 @@
           <div>
             <a :href="yikyungInfo.telHref">
               <span class=syw-contactus-icon>
-                <i class="bi bi-telephone-fill"></i>
+                <i class="bi bi-telephone-fill syw-contactus-icon"></i>
               </span>
             </a>
             <a :href="yikyungInfo.smsHref">
               <span class=syw-contactus-icon>
-                <i class="bi bi-chat-text-fill"></i>
+                <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
               </span>
             </a>
           </div>
@@ -123,14 +123,14 @@ export default {
 }
 
 .syw-contactus-icon {
-  float: left;
+  /*float: left;*/
   /*margin-right: 5%;*/
   margin: 5%;
   width: 30px;
   height: 30px;
   /* background: rgb(248, 246, 248); */
   background: #F14E95;
-  display: table;
+  display: inline-block;
   text-align: center;
   justify-content: center;
   -webkit-box-shadow: 0px 14px 30px -15px rgb(0 0 0 / 75%);
