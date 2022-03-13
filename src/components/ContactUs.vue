@@ -99,7 +99,7 @@ export default {
   height: 100%;
   opacity: .3;
   z-index: -1;
-  background-image: url(~@/assets/img/flowers.jpeg);
+  background-image: url(~@/assets/img/bg/flowers.jpeg);
 }
 
 .syw-section-head h2, .syw-contactus-head-color {

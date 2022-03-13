@@ -60,7 +60,7 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  background-image: url(~@/assets/img/wood-black-bg.jpeg);
+  background-image: url(~@/assets/img/bg/wood-black-bg.jpeg);
   opacity: 0.7;
   height: 560px;
   /* background: #f7accc; */
