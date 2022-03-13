@@ -133,7 +133,7 @@ export default {
 <style>
 .syw-wedding-hall-bg {
   /*background-image: url(~@/assets/img/img_bg_3.jpg);*/
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .syw-wedding-hall-map-icon {
