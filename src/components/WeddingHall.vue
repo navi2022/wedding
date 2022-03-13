@@ -4,7 +4,7 @@
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center">
           <span>Be Our Guest</span>
-          <h2>Wedding Hall</h2>
+          <h2 class="syw-weddinghall-head-color">Wedding Hall</h2>
         </div>
       </div>
       <div class="row text-center" style="display: block;">
@@ -138,5 +138,13 @@ export default {
 
 .syw-wedding-hall-map-icon {
   border-radius: 75%;
+}
+.syw-weddinghall-head-color {
+  color:  dimgray !important;
+  text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
 }
 </style>

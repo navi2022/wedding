@@ -41,7 +41,7 @@ export default {
 <style scoped>
 /* 이하 클래스는 about-us 에서 사용 */
 .syw-section-head h2, .syw-aboutus-head-color {
-  color: gray;
+  color: #F14E95;
   text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
@@ -50,7 +50,7 @@ export default {
 }
 
 .syw-aboutus-bg {
-  background: rgba(0, 0, 0, 0.04);
+  /* background: rgba(0, 0, 0, 0.04); */
 }
 .syw-aboutus-template {
   position: relative;

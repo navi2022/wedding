@@ -61,9 +61,11 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  background-image: url(~@/assets/img/img_bg_1.jpg);
+  /* background-image: url(~@/assets/img/img_bg_1.jpg); */
   height: 560px;
-  /*background: rgba(0, 0, 0, .2);*/
+  /* background: #f7accc; */
+  background: #f18cb8;
+  /* background: rgba(134, 4, 95, 0.582); */
 }
 
 .syw-created-at {
@@ -93,6 +95,7 @@ export default {
   text-transform: uppercase;
   padding: 5px;
   letter-spacing: 5px;
+  
 }
 
 .syw-event-wrap span {
