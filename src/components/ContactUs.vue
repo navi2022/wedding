@@ -6,46 +6,54 @@
           <h2>Contact Us</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
+      <div
+          class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
         <div class="col-6 desc">
           <h3 class="font-himelody">이승민</h3>
-          <p><strong class="font-himelody">신랑에게 연락하기</strong></p>
           <div>
-            <a href='tel:010-4947-8993'>
+            <strong class="font-himelody">연락처: {{ seungminInfo.phone }}</strong>
+            <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.phone' v-clipboard:success="onCopy"></i>
+          </div>
+          <div>
+            <strong class="font-himelody">{{ seungminInfo.bank }}: {{ seungminInfo.account }}</strong>
+            <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.bankAccount'
+               v-clipboard:success="onCopy"></i>
+          </div>
+          <div>
+            <a :href="seungminInfo.telHref">
               <span class=syw-contactus-icon>
                 <i class="bi bi-telephone-fill"></i>
               </span>
             </a>
-            <a href='sms:010-4947-8993'>
+            <a :href="seungminInfo.smsHref">
               <span class=syw-contactus-icon>
                 <i class="bi bi-chat-text-fill"></i>
               </span>
             </a>
-            <span class="syw-contactus-icon font-himelody">
-              계좌
-            </span>
           </div>
         </div>
         <div class="col-6 desc">
           <h3 class="font-himelody">강이경</h3>
-          <p><strong class="font-himelody">신부에게 연락하기</strong></p>
           <div>
-            <a href='tel:010-7758-0292'>
+            <strong class="font-himelody">연락처: {{ yikyungInfo.phone }}</strong>
+            <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.phone' v-clipboard:success="onCopy"></i>
+          </div>
+          <div>
+            <strong class="font-himelody">{{ yikyungInfo.bank }}: {{ yikyungInfo.account }}</strong>
+            <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.bankAccount'
+               v-clipboard:success="onCopy"></i>
+          </div>
+          <div>
+            <a :href="yikyungInfo.telHref">
               <span class=syw-contactus-icon>
                 <i class="bi bi-telephone-fill"></i>
               </span>
             </a>
-            <a href='sms:010-7758-0292'>
+            <a :href="yikyungInfo.smsHref">
               <span class=syw-contactus-icon>
                 <i class="bi bi-chat-text-fill"></i>
               </span>
             </a>
-            <span class="syw-contactus-icon font-himelody">
-              계좌
-            </span>
-            <!-- <span class=syw-contactus-icon>
-              <p><strong class="font-himelody">pay</strong></p>
-            </span> -->
           </div>
         </div>
       </div>
@@ -53,8 +61,27 @@
   </div>
 </template>
 <script>
+
 export default {
-  name: 'ContactUs'
+  name: 'ContactUs',
+  setup: function () {
+    const seungminInfo = {
+      phone: "010-4947-8993", telHref: "tel:010-4947-8993", smsHref: "sms:010-4947-8993",
+      account: "1002956-448899", bank: "우리은행", bankAccount: "우리 1002956-448899"
+    };
+    const yikyungInfo = {
+      phone: "010-7758-0292", telHref: "tel:010-7758-0292", smsHref: "sms:010-7758-0292",
+      account: "1002950-692222", bank: "우리은행", bankAccount: "우리 1002950-692222"
+    };
+    const onCopy = (e) => {
+      alert('[' + e.text + '] 복사완료');
+    }
+    return {
+      seungminInfo,
+      yikyungInfo,
+      onCopy,
+    };
+  }
 };
 </script>
 <style scoped>
@@ -66,28 +93,28 @@ export default {
 .syw-contactus-bg::before {
   content: "";
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
-  width: 100%; 
-  height: 100%;  
-  opacity: .3; 
+  width: 100%;
+  height: 100%;
+  opacity: .3;
   z-index: -1;
   background-image: url(~@/assets/img/flowers.jpeg);
 }
 
 .syw-section-head h2, .syw-contactus-head-color {
   /* color:  #9034bb; */
-  text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+  /*text-shadow:*/
+  /* -1px -1px 0 #fff,  */
+  /*  1px -1px 0 #fff,*/
+  /*  -1px 1px 0 #fff,*/
+  /*   1px 1px 0 #fff;*/
 }
 
 .font-himelody {
   font-family: 'Hi Melody', cursive !important;
   color: #333333;
-  
+
   /* font-weight: 900; */
 }
 
@@ -114,6 +141,7 @@ export default {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 .syw-contactus-icon i {
   display: table-cell;
   vertical-align: middle;
@@ -122,12 +150,14 @@ export default {
   /* color: #333333; */
   /* color: #F14E95; */
 }
+
 .syw-contactus-icon p {
   display: table-cell;
   vertical-align: middle;
   color: #fff;
   /* color: #333333; */
 }
+
 .col-6 > a {
   text-align: center;
   justify-content: center;

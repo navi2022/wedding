@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.js"
 import "animate.css";
 import "./assets/css/style.css"
 import Antd from 'ant-design-vue';
+import VueClipboard from 'vue3-clipboard'
 import 'ant-design-vue/dist/antd.css';
 
 
@@ -16,6 +17,10 @@ createApp(App)
     .use(NaverMaps, {clientId: "s3ee9cvo5x", category: "ncp"})
     .use(VueEasyLightbox)
     .use(Antd)
+    .use(VueClipboard, {
+        autoSetContainer: true,
+        appendToBody: true,
+    })
     .mount('#app')
 
 
