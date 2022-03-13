@@ -11,7 +11,7 @@
         <flicking
             :options="{circular: true,
                       horizontal: true,
-                      renderOnlyVisible: false
+                      renderOnlyVisible: true
                       }"
             :plugins="plugins">
           <img v-for="(img, index) in getImagesByTheme('STUDIO')"
@@ -27,7 +27,7 @@
         <flicking
             :options="{circular: true,
                       horizontal: true,
-                      renderOnlyVisible: false}"
+                      renderOnlyVisible: true}"
             :plugins="plugins">
           <img v-for="(img, index) in getImagesByYear('2018-2019')"
                :key="`${index}`"
@@ -42,7 +42,7 @@
         <flicking
             :options="{circular: true,
                       horizontal: true,
-                      renderOnlyVisible: false}"
+                      renderOnlyVisible: true}"
             :plugins="plugins">
           <img v-for="(img, index) in getImagesByYear('2020-2021')"
                :key="`${index}`"
@@ -67,7 +67,7 @@
 </template>
 <script>
 import Flicking from "@egjs/vue3-flicking";
-import {Parallax} from "@egjs/flicking-plugins";
+import {Fade} from "@egjs/flicking-plugins";
 import "@egjs/flicking-plugins/dist/flicking-plugins.css";
 
 import VueEasyLightbox from 'vue-easy-lightbox'
@@ -185,7 +185,7 @@ export default {
       }
       return [];
     }
-    const plugins = ref([new Parallax({})]);
+    const plugins = ref([new Fade("", 0)]);
     return {
       visible,
       imgs,
