@@ -85,7 +85,7 @@ export default {
 </script>
 <style scoped>
 .syw-greeting-background {
-  background-image: url(~@/assets/img/gallery/studio/IMG_1053.jpg);
+  background-image: url(~@/assets/img/gallery/studio/IMG_1053_2.jpeg);
   background-position: 0px 0px;
 }
 

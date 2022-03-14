@@ -9,28 +9,24 @@
         <div class="couple-wrap animate-box">
           <div class="couple-half">
             <div class="groom">
-              <img src="~@/assets/img/groom.png" alt="groom" class="syw-img-responsive">
+              <img src="~@/assets/img/seungmin_profile.png" alt="groom" class="syw-img-responsive">
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
                 <span class="syw-font-hi-melody">신랑</span>
                 <h3>이승민</h3>
-<!--                <p class="syw-font-hi-melody">6년차 개발자</p>-->
-<!--                <span class="syw-font-hi-melody">좋아하는 것: 커피</span>-->
               </div>
             </div>
           </div>
           <p class="heart text-center"><i class="bi bi-heart-fill"></i></p>
           <div class="couple-half">
             <div class="bride">
-              <img src="~@/assets/img/bride.png" alt="bride" class="syw-img-responsive">
+              <img src="~@/assets/img/yikyung_profile.png" alt="bride" class="syw-img-responsive">
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
                 <span class="syw-font-hi-melody">신부</span>
                 <h3>강이경</h3>
-<!--                <p class="syw-font-hi-melody">신랑의 귀엽고 유쾌한 성격에 호감이 생겼습니다.</p>-->
-<!--                <p class="syw-font-hi-melody">함께 하는 시간이 너무나 즐겁다 보니 어느새 결혼을 맹세하게 되었습니다.</p>-->
               </div>
             </div>
           </div>
@@ -42,9 +38,6 @@
             <li class="animate-box">
               <div class="timeline-badge seungmin-bg"></div>
               <div class="timeline-panel">
-<!--                <div class="timeline-heading">-->
-<!--                  <h4 class="timeline-title">신랑 인사드립니다.</h4>-->
-<!--                </div>-->
                 <div class="timeline-body text-center">
                   <p>두 사람의 사랑과 믿음으로 인생의 새로운 발걸음을 내딛습니다.</p>
                   <p>새롭게 시작하는 기쁨의 자리에 여러분을 초대합니다.</p>
@@ -55,9 +48,6 @@
             <li class="animate-box">
               <div class="timeline-badge yikyung-bg"></div>
               <div class="timeline-panel">
-<!--                <div class="timeline-heading">-->
-<!--                  <h4 class="timeline-title">신부 인사드립니다.</h4>-->
-<!--                </div>-->
                 <div class="timeline-body text-center">
                   <p>코로나 우려로 참석하지 못하시더라도 괜찮습니다.</p>
                   <p>부담 갖지 않으시길 바라며, 모든 분께 감사의 인사를 올립니다.</p>
@@ -66,7 +56,6 @@
               </div>
             </li>
           </ul>
-
         </div>
       </div>
     </div>

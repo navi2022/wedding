@@ -92,7 +92,8 @@ export default {
     const imagesByTheme = {
       'STUDIO': [
         {src: require("@/assets/img/gallery/studio/IMG_1239.jpg")},
-        {src: require("@/assets/img/gallery/studio/IMG_1053.jpg")},
+        // {src: require("@/assets/img/gallery/studio/IMG_1053.jpg")},
+        {src: require("@/assets/img/gallery/studio/IMG_1053_2.jpeg")},
         {src: require("@/assets/img/gallery/studio/IMG_1082.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_1123.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_1210.jpg")},
@@ -120,7 +121,7 @@ export default {
         {src: require("@/assets/img/gallery/2018_2019/20190912_124925.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20190921_185108.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20191012_165101.jpg")},
-          
+
         {src: require("@/assets/img/gallery/2018_2019/20191019_194953.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20191019_200946.jpg")},
       ],
