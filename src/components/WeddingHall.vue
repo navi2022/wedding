@@ -8,13 +8,12 @@
         </div>
       </div>
       <div class="row text-center" style="display: block;">
-        <image-slider class="p-3 w-75 h-50" :images="weddingHallImages" style="border-radius:15%">
-        </image-slider>
+        <image-slider class="p-1 w-75 h-50" :images="weddingHallImages" style="border-radius:15%"></image-slider>
       </div>
       <div class="row syw-section-content text-center">
         <div class="desc">
-          <h3>노블 발렌티 (삼성점)</h3>
-          <p><strong>서울시 강남구 봉은사로 637</strong></p>
+          <h3>노블 발렌티(삼성)</h3>
+          <p><strong>주소: 서울시 강남구 봉은사로 637</strong></p>
           <p><strong>Tel: 02-540-0711~3</strong></p>
         </div>
         <div class="p-4">
