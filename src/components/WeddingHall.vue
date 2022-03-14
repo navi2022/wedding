@@ -14,7 +14,7 @@
       <div class="row syw-section-content text-center">
         <div class="desc">
           <h3>노블 발렌티 (삼성점)</h3>
-          <p><strong>서울시 강남구 봉은사로 637 (서울시 강남구 삼성동 109-6)</strong></p>
+          <p><strong>서울시 강남구 봉은사로 637</strong></p>
           <p><strong>Tel: 02-540-0711~3</strong></p>
         </div>
         <div class="p-4">
