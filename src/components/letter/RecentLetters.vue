@@ -3,11 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-
-          <h2 style="color: white">
-            Recent Letters
-            <i class="bi bi-mailbox"></i>
-          </h2>
+          <h2 style="color: white">Recent Letters <i class="bi bi-mailbox"></i></h2>
         </div>
       </div>
       <div class="row">
@@ -78,6 +74,10 @@ export default {
   font-size: 18px;
   letter-spacing: 2px;
   font-family: 'Sacramento', Arial, serif;
+}
+
+.syw-section-head {
+  padding-bottom: 0.0em;
 }
 
 .syw-event-wrap {
