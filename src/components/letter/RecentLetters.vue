@@ -61,7 +61,7 @@ export default {
 <style scoped>
 .syw-recent-letter-bg {
   background-image: url(~@/assets/img/bg/wood-black-bg.jpeg);
-  opacity: 0.7;
+  opacity: 0.55;
   height: 560px;
   /* background: #f7accc; */
   /* background: rgba(134, 4, 95, 0.582); */
