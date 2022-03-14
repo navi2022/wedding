@@ -21,9 +21,9 @@
                class="syw-content-galleries-flicking"
           >
         </flicking>
-        <h2 class="syw-section-head">Studio</h2>
+        <h2 class="syw-section-head pt-2" style="font-weight: lighter">Studio</h2>
       </div>
-      <div class="row text-center animate__animated animate__slow animate__fadeIn">
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
         <flicking
             :options="{circular: true,
                       horizontal: true,
@@ -38,7 +38,7 @@
         </flicking>
         <h2 class="syw-section-head">2018-2019</h2>
       </div>
-      <div class="row text-center animate__animated animate__slow animate__fadeIn">
+      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
         <flicking
             :options="{circular: true,
                       horizontal: true,
@@ -192,7 +192,7 @@ export default {
 
 .syw-content-galleries div img {
   margin-top: 5%;
-  border-radius: 6rem;
+  border-radius: 5rem;
   width: 270px;
   height: 240px;
 }
