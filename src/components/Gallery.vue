@@ -99,12 +99,8 @@ export default {
         {src: require("@/assets/img/gallery/studio/IMG_1210.jpg")},
 
         {src: require("@/assets/img/gallery/studio/IMG_1341.jpg")},
-        {src: require("@/assets/img/gallery/studio/IMG_1361.jpg")},
-        {src: require("@/assets/img/gallery/studio/IMG_0543.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_0801.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_0829.jpg")},
-
-        {src: require("@/assets/img/gallery/studio/IMG_0985.jpg")},
       ]
     };
     const imagesByYear = {
