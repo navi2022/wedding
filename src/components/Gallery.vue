@@ -186,7 +186,7 @@ export default {
 .syw-content-galleries h2 {
   color: black;
   font-family: "Sacramento", Arial, serif;
-  font-size: 22px;
+  font-size: 19px;
   margin-top: 10px;
 }
 
