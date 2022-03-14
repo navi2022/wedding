@@ -108,8 +108,8 @@ export default {
         [
           require("@/assets/img/hall/1.jpg"),
           require("@/assets/img/hall/2.jpg"),
-          require("@/assets/img/hall/3.jpg"),
-          require("@/assets/img/hall/4.jpg"),
+          // require("@/assets/img/hall/3.jpg"),
+          // require("@/assets/img/hall/4.jpg"),
           require("@/assets/img/hall/5.jpg"),
         ]);
     return {
