@@ -15,8 +15,8 @@
               <div class="desc">
                 <span class="syw-font-hi-melody">신랑</span>
                 <h3>이승민</h3>
-                <p class="syw-font-hi-melody">신부의 귀여운 외모와 재미있는 성격에 호감이 갔습니다.</p>
-                <p class="syw-font-hi-melody">저를 진심으로 사랑하는 모습에서 결혼을 결심하게 되었습니다.</p>
+<!--                <p class="syw-font-hi-melody">6년차 개발자</p>-->
+<!--                <span class="syw-font-hi-melody">좋아하는 것: 커피</span>-->
               </div>
             </div>
           </div>
@@ -29,11 +29,44 @@
               <div class="desc">
                 <span class="syw-font-hi-melody">신부</span>
                 <h3>강이경</h3>
-                <p class="syw-font-hi-melody">신랑의 귀엽고 유쾌한 성격에 호감이 생겼습니다.</p>
-                <p class="syw-font-hi-melody">함께 하는 시간이 너무나 즐겁다 보니 어느새 결혼을 맹세하게 되었습니다.</p>
+<!--                <p class="syw-font-hi-melody">신랑의 귀엽고 유쾌한 성격에 호감이 생겼습니다.</p>-->
+<!--                <p class="syw-font-hi-melody">함께 하는 시간이 너무나 즐겁다 보니 어느새 결혼을 맹세하게 되었습니다.</p>-->
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-md-offset-0">
+          <ul class="timeline animate-box">
+            <li class="animate-box">
+              <div class="timeline-badge seungmin-bg"></div>
+              <div class="timeline-panel">
+<!--                <div class="timeline-heading">-->
+<!--                  <h4 class="timeline-title">신랑 인사드립니다.</h4>-->
+<!--                </div>-->
+                <div class="timeline-body text-center">
+                  <p>저희 두사람 사랑과 믿음의 첫 발걸음을 내딥습니다.</p>
+                  <p>새롭게 시작하는 기쁨의 자리에 여러분을 초대합니다.</p>
+                  <p class="pt-2"><strong>이평호ㆍ손무선</strong>의 장남 <strong>이승민</strong></p>
+                </div>
+              </div>
+            </li>
+            <li class="animate-box">
+              <div class="timeline-badge yikyung-bg"></div>
+              <div class="timeline-panel">
+<!--                <div class="timeline-heading">-->
+<!--                  <h4 class="timeline-title">신부 인사드립니다.</h4>-->
+<!--                </div>-->
+                <div class="timeline-body text-center">
+                  <p>비록 코로나로 인해 참석하지 못하시더라도 괜찮습니다.</p>
+                  <p>부담 갖지 않으시길 바라며, 모든 분들께 진심으로 감사드립니다.</p>
+                  <p class="pt-2"><strong>강재규ㆍ박정희</strong>의 장녀 <strong>강이경</strong></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
@@ -56,7 +89,7 @@ export default {
 .syw-section-head h2, .syw-aboutus-head-color {
   color: #F14E95;
   text-shadow:
-   -1px -1px 0 #fff,  
+   -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
      1px 1px 0 #fff;
@@ -176,12 +209,18 @@ export default {
   }
 }
 
-
 /* 이하 클래스는 ourstory 에서 사용 */
+.seungmin-bg {
+  background-image:url(https://thumbs.dreamstime.com/z/bouquet-red-tulips-12479112.jpg);
+}
+
+.yikyung-bg {
+  background-image:url(https://thumbs.dreamstime.com/z/bouquet-flowers-top-view-isolated-white-67197873.jpg);
+}
 
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 10px 0 0;
   position: relative;
 }
 .timeline:before {
@@ -260,8 +299,8 @@ export default {
   background-repeat: no-repeat;
   position: relative;
   color: #fff;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   line-height: 50px;
   font-size: 1.4em;
   text-align: center;
@@ -314,6 +353,7 @@ export default {
 
 .timeline-body > p,
 .timeline-body > ul {
+  font-size: 13px;
   margin-bottom: 0;
 }
 
