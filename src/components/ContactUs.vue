@@ -6,10 +6,9 @@
           <h2>Contact Us</h2>
         </div>
       </div>
-      <div
-          class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
-        <div class="col-6 desc">
-          <h2 class="font-himelody">신랑 이승민</h2>
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col-6">
+          <h2 class="font-himelody">신랑 <strong>이승민</strong></h2>
           <div>
             <strong class="font-himelody">연락처: {{ seungminInfo.phone }}</strong>
             <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.phone' v-clipboard:success="onCopy"></i>
@@ -32,8 +31,8 @@
             </a>
           </div>
         </div>
-        <div class="col-6 desc">
-          <h2 class="font-himelody">신부 강이경</h2>
+        <div class="col-6">
+          <h2 class="font-himelody">신부 <strong>강이경</strong></h2>
           <div>
             <strong class="font-himelody">연락처: {{ yikyungInfo.phone }}</strong>
             <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.phone' v-clipboard:success="onCopy"></i>
@@ -58,13 +57,12 @@
         </div>
       </div>
 
-      <div
-          class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
-        <div class="col-6 desc">
-          <h2 class="font-himelody">신랑측 혼주</h2>
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col-6">
+          <h2 class="font-himelody pb-4">신랑측 혼주</h2>
           <div>
 
-            <h4 class="font-himelody">아버지 이평호</h4>
+            <h3 class="font-himelody">父 <strong>이평호</strong></h3>
             <strong class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</strong>
             <div>
               <a :href="seungminFatherInfo.telHref">
@@ -79,7 +77,7 @@
               </a>
             </div>
 
-            <h4 class="font-himelody">어머니 손무선</h4>
+            <h3 class="font-himelody">母 <strong>손무선</strong></h3>
             <strong class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</strong>
             <div>
               <a :href="seungminMotherInfo.telHref">
@@ -95,11 +93,11 @@
             </div>
           </div>
         </div>
-        <div class="col-6 desc">
-          <h2 class="font-himelody">신부측 혼주</h2>
+        <div class="col-6">
+          <h2 class="font-himelody pb-4">신부측 혼주</h2>
           <div>
 
-            <h4 class="font-himelody">아버지 강재규</h4>
+            <h3 class="font-himelody">父 <strong>강재규</strong></h3>
             <strong class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</strong>
             <div>
               <a :href="yikyungFatherInfo.telHref">
@@ -114,7 +112,7 @@
               </a>
             </div>
 
-            <h4 class="font-himelody">어머니 박정희</h4>
+            <h3 class="font-himelody">母 <strong>박정희</strong></h3>
             <strong class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</strong>
             <div>
               <a :href="yikyungMotherInfo.telHref">
@@ -204,6 +202,7 @@ export default {
 .font-himelody {
   font-family: 'Hi Melody', cursive !important;
   color: #333333;
+  padding: 5px;
 
   /* font-weight: 900; */
 }
