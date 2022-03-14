@@ -68,7 +68,6 @@
 <script>
 import Flicking from "@egjs/vue3-flicking";
 import {Fade} from "@egjs/flicking-plugins";
-import "@egjs/flicking-plugins/dist/flicking-plugins.css";
 
 import VueEasyLightbox from 'vue-easy-lightbox'
 import {ref} from "vue";
