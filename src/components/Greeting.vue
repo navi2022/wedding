@@ -8,8 +8,8 @@
             <div class="animate__animated animate__fadeIn animate__slower">
               <div class="col syw-section-head text-center">
                 <h2>The Wedding</h2>
-                <span class="simply-date">{{ getWeddingDateTime() }}</span>
-                <span class="simply-date" style="font-size: 14px;">서울 강남구 봉은사로 637 노블발렌티 (삼성점)</span>
+                <p class="simply-date">{{ getWeddingDateTime() }}</p>
+                <p class="simply-date" style="font-size: 15px;">서울 강남구 봉은사로 637 노블발렌티(삼성)</p>
               </div>
             </div>
             <div class="custum-heart">
@@ -188,7 +188,7 @@ export default {
 .simply-date {
   /*color: rgba(255, 255, 255, 0.7);*/
   /*font-size: 20px !important;*/
-  font-size: 20px;
+  font-size: 23px;
   display: block;
   color: white !important;
   font-family: "Sacramento", Arial, serif;
