@@ -277,18 +277,6 @@ export default {
   border-radius: 50%;
 }
 
-.first-meet-bg {
-  background-image:url(~@/assets/img/first-we-meet.png);
-}
-
-.first-date-bg {
-  background-image:url(~@/assets/img/queen.jpeg);
-}
-
-.relationship-bg {
-  background-image:url(~@/assets/img/first-official-date.jpg);
-}
-
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
     width: 60px;
