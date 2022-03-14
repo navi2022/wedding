@@ -99,7 +99,6 @@ export default {
         {src: require("@/assets/img/gallery/studio/IMG_1210.jpg")},
 
         {src: require("@/assets/img/gallery/studio/IMG_1341.jpg")},
-        {src: require("@/assets/img/gallery/studio/IMG_0801.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_0829.jpg")},
       ]
     };
