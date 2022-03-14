@@ -46,7 +46,7 @@
 <!--                  <h4 class="timeline-title">신랑 인사드립니다.</h4>-->
 <!--                </div>-->
                 <div class="timeline-body text-center">
-                  <p>저희 두사람 사랑과 믿음의 첫 발걸음을 내딥습니다.</p>
+                  <p>두 사람의 사랑과 믿음으로 인생의 새로운 발걸음을 내딛습니다.</p>
                   <p>새롭게 시작하는 기쁨의 자리에 여러분을 초대합니다.</p>
                   <p class="pt-2"><strong>이평호ㆍ손무선</strong>의 장남 <strong>이승민</strong></p>
                 </div>
@@ -59,8 +59,8 @@
 <!--                  <h4 class="timeline-title">신부 인사드립니다.</h4>-->
 <!--                </div>-->
                 <div class="timeline-body text-center">
-                  <p>비록 코로나로 인해 참석하지 못하시더라도 괜찮습니다.</p>
-                  <p>부담 갖지 않으시길 바라며, 모든 분들께 진심으로 감사드립니다.</p>
+                  <p>코로나 우려로 참석하지 못하시더라도 괜찮습니다.</p>
+                  <p>부담 갖지 않으시길 바라며, 모든 분께 감사의 인사를 올립니다.</p>
                   <p class="pt-2"><strong>강재규ㆍ박정희</strong>의 장녀 <strong>강이경</strong></p>
                 </div>
               </div>
