@@ -13,8 +13,8 @@
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
-                <h3>이승민</h3>
-                <p>신부의 인간적이고 재미난 성격에 호감이 생겼고, 귀엽고 본인을 좋아해주는 것에 신부와 결혼하고 싶었습니다. </p>
+                <span class="font-hi-melody_20px">신랑</span><h3>이승민</h3>
+                <p class="font-hi-melody_20px">신부의 인간적이고 재미난 성격에 호감이 생겼고, 귀엽고 본인을 좋아해주는 것에 신부와 결혼하고 싶었습니다. </p>
               </div>
             </div>
           </div>
@@ -25,8 +25,8 @@
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
-                <h3>강이경</h3>
-                <p>신랑의 귀엽고 유쾌한 성격에 호감이 생겼고, 함께 하면 시간가는 줄 모를 정도로 즐거움에 신랑과 결혼하고 싶었습니다.</p>
+                <span class="font-hi-melody_20px">신부</span><h3>강이경</h3>
+                <p class="font-hi-melody_20px">신랑의 귀엽고 유쾌한 성격에 호감이 생겼고, 함께 하면 시간가는 줄 모를 정도로 즐거움에 신랑과 결혼하고 싶었습니다.</p>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@
               <div class="timeline-badge first-meet-bg"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h3 class="timeline-title">First We Meet</h3>
+                  <h3 class="timeline-title">First We Met</h3>
                   <span class="date">Feburary 2018</span>
                 </div>
                 <div class="timeline-body">
@@ -88,6 +88,12 @@ export default {
 </script>
 <style scoped>
 /* 이하 클래스는 about-us 에서 사용 */
+
+.font-hi-melody_20px {
+  font-family: 'Hi Melody', cursive;
+  font-size: 20px;
+}
+
 .syw-section-head h2, .syw-aboutus-head-color {
   color: #F14E95;
   text-shadow:
@@ -126,7 +132,7 @@ export default {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: rgb(220,20,60);
+  color: rgb(238, 67, 90);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -317,7 +323,7 @@ export default {
 }
 
 .first-date-bg {
-  background-image:url(~@/assets/img/first-date.jpg);
+  background-image:url(~@/assets/img/queen.jpeg);
 }
 
 .relationship-bg {
