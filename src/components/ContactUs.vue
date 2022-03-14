@@ -137,7 +137,7 @@
 <script>
 
 export default {
-  name: 'ContactUsDetail',
+  name: 'ContactUs',
   setup: function () {
     const seungminInfo = {
       phone: "010-4947-8993", telHref: "tel:010-4947-8993", smsHref: "sms:010-4947-8993",
