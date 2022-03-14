@@ -3,8 +3,11 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-<!--          <span>Thank You Every One</span>-->
-          <h2 style="color: white">Recent Letters</h2>
+
+          <h2 style="color: white">
+            Recent Letters
+            <i class="bi bi-mailbox"></i>
+          </h2>
         </div>
       </div>
       <div class="row">
@@ -60,9 +63,11 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  background-image: url(~@/assets/img/bg/wood-black-bg.jpeg);
-  opacity: 0.55;
-  height: 560px;
+  /*background-image: url(~@/assets/img/bg/wood-black-bg.jpeg);*/
+  background-image: url(https://i.pinimg.com/originals/91/a7/ae/91a7ae81b7694af89ded5e3a609c3bf4.png);
+  background-size: 100% 100%;
+  opacity: 1.0;
+  height: 600px;
   /* background: #f7accc; */
   /* background: rgba(134, 4, 95, 0.582); */
 }
