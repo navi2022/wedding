@@ -188,6 +188,7 @@ export default {
   opacity: .3;
   z-index: -1;
   background-image: url(~@/assets/img/bg/flowers.jpeg);
+  background-size: 100% 100%;
 }
 
 .syw-section-head h2, .syw-contactus-head-color {

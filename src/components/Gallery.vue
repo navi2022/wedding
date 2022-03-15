@@ -176,9 +176,10 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .4;
+  opacity: .6;
   z-index: -1;
   background-image: url(~@/assets/img/bg/wood-brown-bg.webp);
+  background-size: 100% 100%;
 }
 
 .syw-content-galleries h2 {
