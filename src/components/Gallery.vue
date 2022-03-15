@@ -107,7 +107,6 @@ export default {
     };
     const imagesByYear = {
       '2018-2019': [
-        {src: require("@/assets/img/gallery/2018_2019/20181216_211827.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20181225_182052.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20181231_215158.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20190713_211232.jpg")},
@@ -129,22 +128,20 @@ export default {
         {src: require("@/assets/img/gallery/2018_2019/20191019_200946.jpg")},
       ],
       '2020-2021': [
-        {src: require("@/assets/img/gallery/2020_2021/MAIN.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200305_200242.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200321_121847.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200425_184859.jpg")},
-
         {src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
+
         {src: require("@/assets/img/gallery/2020_2021/20200704_124214.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200726_200439.jpg")},
-
         {src: require("@/assets/img/gallery/2020_2021/20201031_202534.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20210210_151401.jpg")},
+
         {src: require("@/assets/img/gallery/2020_2021/20210626_185630.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20210808_182957.jpg")},
-        {src: require("@/assets/img/gallery/2020_2021/20211119_193120.jpg")},
       ],
     }
     const plugins = ref([new Fade("", 0)]);
