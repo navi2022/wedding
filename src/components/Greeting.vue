@@ -1,7 +1,7 @@
 <template>
   <div class="syw-cover">
     <div class="syw-overlay syw-header"></div>
-    <div class="syw-cover syw-header text-center syw-greeting-background" data-stellar-background-ratio="0.5">
+    <div class="syw-cover syw-header text-center syw-greeting-background">
       <div class="display-t">
         <div class="display-tc">
           <div class="container">
@@ -86,7 +86,8 @@ export default {
 <style scoped>
 .syw-greeting-background {
   background-image: url(~@/assets/img/gallery/studio/IMG_1053_2.jpeg);
-  background-position: 0px 0px;
+  background-size: 100% 100%;
+  /*background-position: 0px 0px;*/
 }
 
 .syw-countdown {
