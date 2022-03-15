@@ -17,7 +17,7 @@
           <img v-for="(img, index) in imagesByTheme.STUDIO"
                :key="`${index}`"
                :src="img.src"
-               @click="showImage(img)"
+               @click="showImages(imagesByTheme.STUDIO, index)"
                class="syw-content-galleries-flicking"
           >
         </flicking>
@@ -32,7 +32,7 @@
           <img v-for="(img, index) in imagesByYear['2018-2019']"
                :key="`${index}`"
                :src="img.src"
-               @click="showImage(img)"
+               @click="showImages(imagesByYear['2018-2019'], index)"
                class="syw-content-galleries-flicking"
           >
         </flicking>
@@ -47,7 +47,7 @@
           <img v-for="(img, index) in imagesByYear['2020-2021']"
                :key="`${index}`"
                :src="img.src"
-               @click="showImage(img)"
+               @click="showImages(imagesByYear['2020-2021'], index)"
                class="syw-content-galleries-flicking"
           >
         </flicking>
@@ -85,8 +85,9 @@ export default {
     const hide = () => {
       visible.value = false;
     };
-    const showImage = (image) => {
-      imgs.value = [image];
+    const showImages = (images, imageIndex) => {
+      imgs.value = images;
+      index.value = imageIndex;
       show();
     };
     const imagesByTheme = {
@@ -151,7 +152,7 @@ export default {
       index,
       show,
       hide,
-      showImage,
+      showImages,
       imagesByYear,
       imagesByTheme,
       plugins
