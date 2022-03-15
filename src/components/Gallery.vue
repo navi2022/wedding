@@ -55,6 +55,8 @@
       </div>
     </div>
     <vue-easy-lightbox
+        loop
+        scrollEnabled
         escEnabled
         moveDisabled
         :visible="visible"
