@@ -14,11 +14,11 @@ import ContactUs from "@/components/ContactUs";
 import WeddingHall from "@/components/WeddingHall";
 import RecentLetters from "@/components/letter/RecentLetters";
 import Gallery from "@/components/Gallery";
-import WriteLetter from "./letter/WriteLetter";
+import WriteLetter from "@/components/letter/WriteLetter";
 
 export default {
   name: 'Main',
-  components: {WriteLetter, Greeting, AboutUs, ContactUs, WeddingHall, RecentLetters, Gallery}
+  components: {Greeting, AboutUs, ContactUs, WeddingHall, RecentLetters, Gallery, WriteLetter}
 };
 </script>
 
