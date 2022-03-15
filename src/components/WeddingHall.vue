@@ -45,16 +45,16 @@
       <div class="row text-center" style="display: block;">
         <div class="col p-2">
           <a v-bind:href="linkToNaverMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/naver_map.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/naver_map.png')" />
           </a>
           <a v-bind:href="linkToKakaoMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/kakao_map.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/kakao_map.png')" />
           </a>
           <a v-bind:href="linkToGoogleMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/google_map.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/google_map.png')" />
           </a>
           <a v-bind:href="linkToTMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/tmap.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/tmap.png')" />
           </a>
         </div>
       </div>
@@ -137,6 +137,8 @@ export default {
 
 .syw-wedding-hall-map-icon {
   border-radius: 75%;
+  width: 15% !important;
+  height: 15% !important;
 }
 .syw-weddinghall-head-color {
   color:  dimgray !important;
