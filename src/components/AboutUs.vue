@@ -39,7 +39,7 @@
               <div class="timeline-badge seungmin-bg"></div>
               <div class="timeline-panel">
                 <div class="timeline-body text-center">
-                  <p>두 사람의 사랑과 믿음으로 인생의 새로운 발걸음을 내딛습니다.</p>
+                  <p>두 사람의 믿음과 사랑으로 새 발걸음을 힘차게 내딛습니다.</p>
                   <p>새롭게 시작하는 기쁨의 자리에 여러분을 초대합니다.</p>
                   <p class="pt-2"><strong>이평호ㆍ손무선</strong>의 장남 <strong>이승민</strong></p>
                 </div>
