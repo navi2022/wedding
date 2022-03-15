@@ -9,7 +9,7 @@
         <div class="couple-wrap animate-box">
           <div class="couple-half">
             <div class="groom">
-              <img src="~@/assets/img/seungmin_profile.png" alt="groom" class="syw-img-responsive">
+              <img src="~@/assets/img/seungmin_profile2.png" alt="groom" class="syw-img-responsive">
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
@@ -21,7 +21,7 @@
           <p class="heart text-center"><i class="bi bi-heart-fill"></i></p>
           <div class="couple-half">
             <div class="bride">
-              <img src="~@/assets/img/yikyung_profile.png" alt="bride" class="syw-img-responsive">
+              <img src="~@/assets/img/yikyung_profile2.png" alt="bride" class="syw-img-responsive">
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
