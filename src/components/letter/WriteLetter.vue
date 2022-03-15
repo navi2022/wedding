@@ -152,7 +152,7 @@ export default {
 .syw-write-letter-bg {
   width: 100%;
   height: 500px;
-  opacity: 0.8;
+  opacity: 0.65;
   background-image: url(~@/assets/img/bg/flowers-pink.jpeg);
   background-size: 100% 100%;
 }
