@@ -1,10 +1,9 @@
 <template>
-  <div class="syw-section syw-write-letter-bg" data-stellar-background-ratio="0.5">
+  <div class="syw-section syw-write-letter-bg">
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <span>Celebrate Us</span>
-          <h2>Write a Letter</h2>
+          <h2>Write a Letter <i class="bi bi-mailbox"></i></h2>
         </div>
       </div>
       <form class="form-inline" v-on:submit.prevent>
@@ -37,12 +36,12 @@
 <!--          </div>-->
 <!--        </div>-->
         <div v-if="contentInfo.show" class="row animate__animated animate__fadeInDown">
-          <div class="form-group text-center pb-4">
+          <div class="form-group text-center pb-2">
             <a-textarea v-model:value="contentInfo.content"
                         placeholder="내용"
                         show-count
                         :maxlength="150"
-                        :auto-size="{ minRows: 2, maxRows: 10 }"
+                        :auto-size="{ minRows: 2, maxRows: 5}"
                         @focusout.prevent="isValidContent()"
                         :class="{ 'is-invalid': contentInfo.invalid}"
             >
@@ -50,7 +49,7 @@
           </div>
         </div>
         <div v-if="submitStatus.show" class="row animate__animated animate__fadeInUp">
-          <div class="form-group text-center pb-4">
+          <div class="form-group text-center pb-3">
             <button @click="submit"
                     class="btn btn-primary btn-block"
                     style="width: 150px"
@@ -151,20 +150,11 @@ export default {
 </script>
 <style scoped>
 .syw-write-letter-bg {
-  position: relative;
-  z-index: 1;
-}
-
-.syw-write-letter-bg::before {
-  content: "";
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%; 
-  height: 100%;  
-  opacity: .3; 
-  z-index: -1;
-  background-image: url(~@/assets/img/flowers-pink.jpeg);
+  width: 100%;
+  height: 500px;
+  opacity: 0.7;
+  background-image: url(~@/assets/img/bg/flowers-pink.jpeg);
+  background-size: 100% 100%;
 }
 
 .is-invalid {

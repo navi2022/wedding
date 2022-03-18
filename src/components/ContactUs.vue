@@ -6,10 +6,9 @@
           <h2>Contact Us</h2>
         </div>
       </div>
-      <div
-          class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn font-himelody">
-        <div class="col-6 desc">
-          <h3 class="font-himelody">이승민</h3>
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col-6">
+          <h2 class="font-himelody">신랑 <strong>이승민</strong></h2>
           <div>
             <strong class="font-himelody">연락처: {{ seungminInfo.phone }}</strong>
             <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.phone' v-clipboard:success="onCopy"></i>
@@ -32,8 +31,8 @@
             </a>
           </div>
         </div>
-        <div class="col-6 desc">
-          <h3 class="font-himelody">강이경</h3>
+        <div class="col-6">
+          <h2 class="font-himelody">신부 <strong>강이경</strong></h2>
           <div>
             <strong class="font-himelody">연락처: {{ yikyungInfo.phone }}</strong>
             <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.phone' v-clipboard:success="onCopy"></i>
@@ -57,6 +56,79 @@
           </div>
         </div>
       </div>
+
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
+        <div class="col-6">
+          <h2 class="font-himelody pb-4">신랑측 혼주</h2>
+          <div>
+
+            <h3 class="font-himelody">父 <strong>이평호</strong></h3>
+            <strong class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</strong>
+            <div>
+              <a :href="seungminFatherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="seungminFatherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
+
+            <h3 class="font-himelody">母 <strong>손무선</strong></h3>
+            <strong class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</strong>
+            <div>
+              <a :href="seungminMotherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="seungminMotherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h2 class="font-himelody pb-4">신부측 혼주</h2>
+          <div>
+
+            <h3 class="font-himelody">父 <strong>강재규</strong></h3>
+            <strong class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</strong>
+            <div>
+              <a :href="yikyungFatherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="yikyungFatherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
+
+            <h3 class="font-himelody">母 <strong>박정희</strong></h3>
+            <strong class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</strong>
+            <div>
+              <a :href="yikyungMotherInfo.telHref">
+                <span class=syw-contactus-icon>
+                  <i class="bi bi-telephone-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+              <a :href="yikyungMotherInfo.smsHref">
+                <span class="syw-contactus-icon">
+                  <i class="bi bi-chat-text-fill syw-contactus-icon"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -69,16 +141,32 @@ export default {
       phone: "010-4947-8993", telHref: "tel:010-4947-8993", smsHref: "sms:010-4947-8993",
       account: "1002956-448899", bank: "우리은행", bankAccount: "우리 1002956-448899"
     };
+    const seungminFatherInfo = {
+      phone: "010-9305-8997", telHref: "tel:010-9305-8997", smsHref: "sms:010-9305-8997",
+    };
+    const seungminMotherInfo = {
+      phone: "010-5549-8993", telHref: "tel:010-5549-8993", smsHref: "sms:010-5549-8993",
+    };
     const yikyungInfo = {
       phone: "010-7758-0292", telHref: "tel:010-7758-0292", smsHref: "sms:010-7758-0292",
       account: "1002950-692222", bank: "우리은행", bankAccount: "우리 1002950-692222"
+    };
+    const yikyungFatherInfo = {
+      phone: "010-3189-9000", telHref: "tel:010-3189-9000", smsHref: "sms:010-3189-9000",
+    };
+    const yikyungMotherInfo = {
+      phone: "010-3648-0292", telHref: "tel:010-3648-0292", smsHref: "sms:010-3648-0292",
     };
     const onCopy = (e) => {
       alert('[' + e.text + '] 복사완료');
     }
     return {
       seungminInfo,
+      seungminFatherInfo,
+      seungminMotherInfo,
       yikyungInfo,
+      yikyungFatherInfo,
+      yikyungMotherInfo,
       onCopy,
     };
   }
@@ -99,7 +187,8 @@ export default {
   height: 100%;
   opacity: .3;
   z-index: -1;
-  background-image: url(~@/assets/img/flowers.jpeg);
+  background-image: url(~@/assets/img/bg/flowers.jpeg);
+  background-size: 100% 100%;
 }
 
 .syw-section-head h2, .syw-contactus-head-color {
@@ -114,9 +203,11 @@ export default {
 .font-himelody {
   font-family: 'Hi Melody', cursive !important;
   color: #333333;
+  padding: 5px;
 
   /* font-weight: 900; */
 }
+
 
 .syw-contactus-icon.font-himelody {
   color: #fff;

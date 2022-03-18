@@ -9,77 +9,53 @@
         <div class="couple-wrap animate-box">
           <div class="couple-half">
             <div class="groom">
-              <img src="~@/assets/img/groom.png" alt="groom" class="syw-img-responsive">
+              <img src="~@/assets/img/seungmin_profile2.png" alt="groom" class="syw-img-responsive">
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
                 <span class="syw-font-hi-melody">신랑</span>
                 <h3>이승민</h3>
-                <p class="syw-font-hi-melody">신부의 귀여운 외모와 재미있는 성격에 호감이 갔습니다.</p>
-                <p class="syw-font-hi-melody">저를 진심으로 사랑하는 모습에서 결혼을 결심하게 되었습니다.</p>
               </div>
             </div>
           </div>
           <p class="heart text-center"><i class="bi bi-heart-fill"></i></p>
           <div class="couple-half">
             <div class="bride">
-              <img src="~@/assets/img/bride.png" alt="bride" class="syw-img-responsive">
+              <img src="~@/assets/img/yikyung_profile2.png" alt="bride" class="syw-img-responsive">
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
                 <span class="syw-font-hi-melody">신부</span>
                 <h3>강이경</h3>
-                <p class="syw-font-hi-melody">신랑의 귀엽고 유쾌한 성격에 호감이 생겼습니다.</p>
-                <p class="syw-font-hi-melody">함께 하는 시간이 너무나 즐겁다 보니 어느새 결혼을 맹세하게 되었습니다.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
       <div class="row">
         <div class="col-md-12 col-md-offset-0">
           <ul class="timeline animate-box">
             <li class="animate-box">
-              <div class="timeline-badge first-meet-bg"></div>
+              <div class="timeline-badge seungmin-bg"></div>
               <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h3 class="timeline-title">First We Met</h3>
-                  <span class="date">Feburary 2018</span>
-                </div>
-                <div class="timeline-body">
-                  <p>사내 스터디를 진행하면서 처음 만났습니다.</p>
-                  <p>동갑이면서 서로 친화적인 성격 덕분에 자연스럽게 가까워졌습니다.</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted animate-box">
-              <div class="timeline-badge first-date-bg"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h3 class="timeline-title">First Dating</h3>
-                  <span class="date">November 2018</span>
-                </div>
-                <div class="timeline-body">
-                  <p>스터티를 빌미로 만나 중국 가정음식 맛집에서 가지 볶음을 맛있게 먹었습니다.</p>
-                  <p>식사 후 영화 한 편을 보았고, 영화 [보헤미안 랩소디]는 우리가 함께한 첫 영화가 되었습니다.</p>
+                <div class="timeline-body text-center">
+                  <p>두 사람의 믿음과 사랑으로 새 발걸음을 힘차게 내딛습니다.</p>
+                  <p>새롭게 시작하는 기쁨의 자리에 여러분을 초대합니다.</p>
+                  <p class="pt-2"><strong>이평호ㆍ손무선</strong>의 장남 <strong>이승민</strong></p>
                 </div>
               </div>
             </li>
             <li class="animate-box">
-              <div class="timeline-badge relationship-bg"></div>
+              <div class="timeline-badge yikyung-bg"></div>
               <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h3 class="timeline-title">In A Relationship</h3>
-                  <span class="date">December 2018</span>
-                </div>
-                <div class="timeline-body">
-                  <p>크리스마스이브에 이태원 Jazz 공연에 갔고, 신랑이 깜짝 케이크 이벤트를 준비했습니다.</p>
-                  <p>이후 우리의 관계는 공식적인 연인 관계가 되었습니다.</p>
+                <div class="timeline-body text-center">
+                  <p>코로나 우려로 참석하지 못하시더라도 괜찮습니다.</p>
+                  <p>부담 갖지 않으시길 바라며, 모든 분께 감사의 인사를 올립니다.</p>
+                  <p class="pt-2"><strong>강재규ㆍ박정희</strong>의 장녀 <strong>강이경</strong></p>
                 </div>
               </div>
             </li>
-            </ul>
+          </ul>
         </div>
       </div>
     </div>
@@ -102,7 +78,7 @@ export default {
 .syw-section-head h2, .syw-aboutus-head-color {
   color: #F14E95;
   text-shadow:
-   -1px -1px 0 #fff,  
+   -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
      1px 1px 0 #fff;
@@ -222,12 +198,18 @@ export default {
   }
 }
 
-
 /* 이하 클래스는 ourstory 에서 사용 */
+.seungmin-bg {
+  background-image:url(https://thumbs.dreamstime.com/z/bouquet-red-tulips-12479112.jpg);
+}
+
+.yikyung-bg {
+  background-image:url(https://thumbs.dreamstime.com/z/bouquet-flowers-top-view-isolated-white-67197873.jpg);
+}
 
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 10px 0 0;
   position: relative;
 }
 .timeline:before {
@@ -306,8 +288,8 @@ export default {
   background-repeat: no-repeat;
   position: relative;
   color: #fff;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   line-height: 50px;
   font-size: 1.4em;
   text-align: center;
@@ -321,18 +303,6 @@ export default {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-}
-
-.first-meet-bg {
-  background-image:url(~@/assets/img/first-we-meet.png);
-}
-
-.first-date-bg {
-  background-image:url(~@/assets/img/queen.jpeg);
-}
-
-.relationship-bg {
-  background-image:url(~@/assets/img/first-official-date.jpg);
 }
 
 @media screen and (max-width: 480px) {
@@ -372,6 +342,7 @@ export default {
 
 .timeline-body > p,
 .timeline-body > ul {
+  font-size: 13px;
   margin-bottom: 0;
 }
 

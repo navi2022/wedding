@@ -5,14 +5,14 @@
         <a href="/" class="router-link">Home</a>
       </div>
       <div class="col">
-        <a href="/contact" class="router-link">Contact</a>
+        <a href="/gallery" class="router-link">Gallery</a>
       </div>
       <div class="col">
         <a href="/guestBook" class="router-link">GuestBook</a>
       </div>
-      <div class="col">
-        <a href="/gallery" class="router-link">Gallery</a>
-      </div>
+      <!--      <div class="col">-->
+      <!--        <a href="/contact" class="router-link">Contact</a>-->
+      <!--      </div>-->
     </div>
   </nav>
 </template>

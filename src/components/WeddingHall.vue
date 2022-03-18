@@ -8,16 +8,15 @@
         </div>
       </div>
       <div class="row text-center" style="display: block;">
-        <image-slider class="p-3 w-75 h-50" :images="weddingHallImages" style="border-radius:15%">
-        </image-slider>
+        <image-slider class="p-1 w-75 h-50" :images="weddingHallImages" style="border-radius:15%"></image-slider>
       </div>
       <div class="row syw-section-content text-center">
         <div class="desc">
-          <h3>노블 발렌티 (삼성점)</h3>
-          <p><strong>서울시 강남구 봉은사로 637 (서울시 강남구 삼성동 109-6)</strong></p>
+          <h3>노블 발렌티(삼성)</h3>
+          <p><strong>주소: 서울시 강남구 봉은사로 637</strong></p>
           <p><strong>Tel: 02-540-0711~3</strong></p>
         </div>
-        <div class="p-2">
+        <div class="p-4">
           <naver-maps
               width="100%"
               height="300px"
@@ -46,16 +45,16 @@
       <div class="row text-center" style="display: block;">
         <div class="col p-2">
           <a v-bind:href="linkToNaverMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/naver_map.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/naver_map.png')" />
           </a>
           <a v-bind:href="linkToKakaoMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/kakao_map.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/kakao_map.png')" />
           </a>
           <a v-bind:href="linkToGoogleMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/google_map.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/google_map.png')" />
           </a>
           <a v-bind:href="linkToTMap()">
-            <img class="syw-wedding-hall-map-icon w-25 h-25" v-bind:src="require('@/assets/map/tmap.png')" />
+            <img class="syw-wedding-hall-map-icon" v-bind:src="require('@/assets/map/tmap.png')" />
           </a>
         </div>
       </div>
@@ -108,8 +107,8 @@ export default {
         [
           require("@/assets/img/hall/1.jpg"),
           require("@/assets/img/hall/2.jpg"),
-          require("@/assets/img/hall/3.jpg"),
-          require("@/assets/img/hall/4.jpg"),
+          // require("@/assets/img/hall/3.jpg"),
+          // require("@/assets/img/hall/4.jpg"),
           require("@/assets/img/hall/5.jpg"),
         ]);
     return {
@@ -133,11 +132,13 @@ export default {
 <style>
 .syw-wedding-hall-bg {
   /*background-image: url(~@/assets/img/img_bg_3.jpg);*/
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(0, 0, 0, 0.07);
 }
 
 .syw-wedding-hall-map-icon {
   border-radius: 75%;
+  width: 15% !important;
+  height: 15% !important;
 }
 .syw-weddinghall-head-color {
   color:  dimgray !important;

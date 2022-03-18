@@ -1,15 +1,15 @@
 <template>
   <div class="syw-cover">
     <div class="syw-overlay syw-header"></div>
-    <div class="syw-cover syw-header text-center syw-greeting-background" data-stellar-background-ratio="0.5">
+    <div class="syw-cover syw-header text-center syw-greeting-background">
       <div class="display-t">
         <div class="display-tc">
           <div class="container">
             <div class="animate__animated animate__fadeIn animate__slower">
               <div class="col syw-section-head text-center">
                 <h2>The Wedding</h2>
-                <span class="simply-date">{{ getWeddingDateTime() }}</span>
-                <span class="simply-date" style="font-size: 14px;">서울 강남구 봉은사로 637 노블발렌티 (삼성점)</span>
+                <p class="simply-date">{{ getWeddingDateTime() }}</p>
+                <p class="simply-date" style="font-size: 15px;">서울 강남구 봉은사로 637 노블발렌티(삼성)</p>
               </div>
             </div>
             <div class="custum-heart">
@@ -85,8 +85,9 @@ export default {
 </script>
 <style scoped>
 .syw-greeting-background {
-  background-image: url(~@/assets/img/gallery/studio/IMG_1053.jpg);
-  background-position: 0px 0px;
+  background-image: url(~@/assets/img/gallery/studio/IMG_1053_2.jpeg);
+  background-size: 100% 100%;
+  /*background-position: 0px 0px;*/
 }
 
 .syw-countdown {
@@ -188,7 +189,7 @@ export default {
 .simply-date {
   /*color: rgba(255, 255, 255, 0.7);*/
   /*font-size: 20px !important;*/
-  font-size: 20px;
+  font-size: 23px;
   display: block;
   color: white !important;
   font-family: "Sacramento", Arial, serif;

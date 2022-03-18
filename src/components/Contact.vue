@@ -1,14 +1,14 @@
 <template>
-  <contact-us-detail></contact-us-detail>
+  <contact-us></contact-us>
   <wedding-hall></wedding-hall>
 </template>
 <script>
-import ContactUsDetail from "@/components/ContactUsDetail";
+import ContactUs from "@/components/ContactUs";
 import WeddingHall from "@/components/WeddingHall";
 
 export default {
   name: 'Contact',
-  components: {ContactUsDetail, WeddingHall}
+  components: {ContactUs, WeddingHall}
 };
 </script>
 

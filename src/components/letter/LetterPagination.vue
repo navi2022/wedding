@@ -77,7 +77,7 @@ export default {
 </script>
 <style scoped>
 .syw-letter-pagination-bg {
-  background-image: url(~@/assets/img/wallpaperbetter.jpg);
+  background-image: url(~@/assets/img/bg/wallpaperbetter.jpg);
 }
 
 .syw-letter-pagination-content {
