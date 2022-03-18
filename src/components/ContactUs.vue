@@ -187,7 +187,9 @@ export default {
   height: 100%;
   opacity: .3;
   z-index: -1;
-  background-image: url(~@/assets/img/bg/flowers.jpeg);
+  /*background-image: url(https://i.pinimg.com/736x/a3/fe/82/a3fe82109b446674b85b300d22c038be.jpg);*/
+  /*background-image: url(~@/assets/img/bg/flowers.jpeg);*/
+  background-image: url(https://www.seekpng.com/png/full/13-130566_watercolor-illustration-for-wedding-flower-background-invitation-free.png);
   background-size: 100% 100%;
 }
 
