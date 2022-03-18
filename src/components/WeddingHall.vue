@@ -138,7 +138,7 @@ export default {
   /*background-image: url(https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGRmbG93ZXIxMWJhdGNoMy10YXVzLTAyYS1qb2I2NF8xLnBuZw.png?s=gH2Ierg1BwRdivQ0_sCLkh95G6rcvhvbDcxfRe_bop0);*/
   background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm123-flower1-gloy-35-l_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=baa50b181a8aa81ac4b5d349d13f7d57);
   background-size: 100% 100%;
-  opacity: 0.85;
+  opacity: 0.9;
   /*background: rgba(0, 0, 0, 0.07);*/
 }
 
