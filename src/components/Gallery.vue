@@ -97,7 +97,7 @@ export default {
         {src: require("@/assets/img/gallery/studio/IMG_1239.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_1053_2.jpeg")},
         {src: require("@/assets/img/gallery/studio/IMG_1082.jpg")},
-        {src: require("@/assets/img/gallery/studio/IMG_1123.jpg")},
+        {src: require("@/assets/img/gallery/studio/IMG_1123_2.jpg")},
         {src: require("@/assets/img/gallery/studio/IMG_1210.jpg")},
 
         {src: require("@/assets/img/gallery/studio/IMG_1341.jpg")},
