@@ -15,7 +15,7 @@
           <h3>노블 발렌티(삼성)</h3>
           <p><strong>주소: 서울시 강남구 봉은사로 637, Tel: 02-540-0711~3</strong></p>
         </div>
-        <div class="pb-3" style="padding-left: 5rem !important; padding-right: 5rem !important;">
+        <div class="px-4 pb-2">
           <naver-maps
               width="100%"
               height="200px"
