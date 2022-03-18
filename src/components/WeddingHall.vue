@@ -18,7 +18,7 @@
         <div class="px-5 pb-1">
           <naver-maps
               width="100%"
-              height="200px"
+              height="250px"
               :mapOptions="mapOptions"
               :initLayers="initLayers"
               @onLoad="onLoadMap($event)"
