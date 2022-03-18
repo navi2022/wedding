@@ -13,9 +13,9 @@
       <div class="row syw-section-content text-center">
         <div class="desc">
           <h3>노블 발렌티(삼성)</h3>
-          <p><strong>주소: 서울시 강남구 봉은사로 637, Tel: 02-540-0711~3</strong></p>
+          <p><strong>주소: 서울시 강남구 봉은사로 637</strong></p>
         </div>
-        <div class="px-4 pb-2">
+        <div class="px-5 pb-1">
           <naver-maps
               width="100%"
               height="200px"
@@ -138,7 +138,7 @@ export default {
   /*background-image: url(https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGRmbG93ZXIxMWJhdGNoMy10YXVzLTAyYS1qb2I2NF8xLnBuZw.png?s=gH2Ierg1BwRdivQ0_sCLkh95G6rcvhvbDcxfRe_bop0);*/
   background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm123-flower1-gloy-35-l_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=baa50b181a8aa81ac4b5d349d13f7d57);
   background-size: 100% 100%;
-  opacity: 0.9;
+  opacity: 0.8;
   /*background: rgba(0, 0, 0, 0.07);*/
 }
 
