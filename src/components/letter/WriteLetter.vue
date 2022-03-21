@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <h2>Write a Letter</h2>
+          <h2>Write Letter</h2>
         </div>
       </div>
       <form class="form-inline" v-on:submit.prevent>
@@ -12,7 +12,7 @@
             <a-input v-model:value="nameInfo.name"
                      placeholder="성함"
                      size="default"
-                     style="width:200px;"
+                     style="width:100%;"
                      :maxLength="18"
                      :class="{ 'is-invalid': nameInfo.invalid}"
                      @keydown.enter.prevent="isValidName()"
@@ -52,7 +52,7 @@
           <div class="form-group text-center pb-3">
             <button @click="submit"
                     class="btn btn-primary btn-block"
-                    style="width: 150px"
+                    style="width: 100%"
             >
               편지 보내기
             </button>
@@ -115,8 +115,7 @@ export default {
     };
     const submitStatus = ref({"show": true, "invalid": false});
     const submit = () => {
-      if (isValidName()
-          && isValidContent()) {
+      if (isValidName() && isValidContent()) {
         const url = "https://seungmin-yikyung.duckdns.org/api/wedding/letters"
         const letter = {
           "creator": nameInfo.value.name,

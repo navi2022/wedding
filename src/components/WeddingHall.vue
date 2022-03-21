@@ -4,7 +4,7 @@
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center">
           <!-- <span>Be Our Guest</span> -->
-          <h2 class="syw-weddinghall-head-color">Wedding Hall</h2>
+          <h2 class="syw-weddinghall-head-color">WeddingHall</h2>
         </div>
       </div>
       <div class="row text-center" style="display: block;">
