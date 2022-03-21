@@ -100,7 +100,7 @@ export default {
     //   contentInfo.value.show = true;
     //   return true;
     // };
-    const contentInfo = ref({"show": false, "invalid": false, "content": ""});
+    const contentInfo = ref({"show": true, "invalid": false, "content": ""});
     const isValidContent = () => {
       contentInfo.value.content = contentInfo.value.content.trim();
       if (contentInfo.value.content.length == 0) {
@@ -113,7 +113,7 @@ export default {
       submitStatus.value.show = true;
       return true;
     };
-    const submitStatus = ref({"show": false, "invalid": false});
+    const submitStatus = ref({"show": true, "invalid": false});
     const submit = () => {
       if (isValidName()
           && isValidContent()) {
