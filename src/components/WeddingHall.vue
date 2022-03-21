@@ -146,6 +146,7 @@ export default {
   border-radius: 75%;
   width: 15% !important;
   height: 15% !important;
+  margin: 5px;
 }
 .syw-weddinghall-head-color {
   color:  dimgray !important;

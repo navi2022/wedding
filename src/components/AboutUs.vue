@@ -2,8 +2,8 @@
   <div class="syw-section">
     <div class="container">
       <div class="col syw-section-head text-center syw-aboutus-head-color">
-        <span>We love each other</span>
-        <h2>About Us</h2>
+        <span>Invitation Letter</span>
+        <h2>Wedding</h2>
       </div>
       <div class="row">
         <div class="couple-wrap animate-box">
@@ -13,8 +13,8 @@
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
-                <span class="syw-font-hi-melody">신랑</span>
-                <h3>이승민</h3>
+                <span>신랑 </span>
+                <span class="syw-font-hi-melody">이승민</span>
               </div>
             </div>
           </div>
@@ -25,8 +25,8 @@
             </div>
             <div class="row syw-section-content text-center">
               <div class="desc">
-                <span class="syw-font-hi-melody">신부</span>
-                <h3>강이경</h3>
+                <span>신부 </span>
+                <span class="syw-font-hi-melody">강이경</span>
               </div>
             </div>
           </div>
@@ -36,7 +36,6 @@
         <div class="col-md-12 col-md-offset-0">
           <ul class="timeline animate-box">
             <li class="animate-box">
-              <div class="timeline-badge seungmin-bg"></div>
               <div class="timeline-panel">
                 <div class="timeline-body text-center">
                   <p>두 사람의 믿음과 사랑으로 새 발걸음을 힘차게 내딛습니다.</p>
@@ -46,7 +45,6 @@
               </div>
             </li>
             <li class="animate-box">
-              <div class="timeline-badge yikyung-bg"></div>
               <div class="timeline-panel">
                 <div class="timeline-body text-center">
                   <p>코로나 우려로 참석하지 못하시더라도 괜찮습니다.</p>
@@ -71,12 +69,13 @@ export default {
 /* 이하 클래스는 about-us 에서 사용 */
 
 .syw-font-hi-melody {
-  font-family: 'Hi Melody', cursive;
-  font-size: 18px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .syw-section-head h2, .syw-aboutus-head-color {
-  color: #F14E95;
+  color: #5a5a5a;
   text-shadow:
    -1px -1px 0 #fff,
     1px -1px 0 #fff,
@@ -212,7 +211,7 @@ export default {
   padding: 10px 0 0;
   position: relative;
 }
-.timeline:before {
+/* .timeline:before {
   top: 0;
   bottom: 0;
   position: absolute;
@@ -221,12 +220,12 @@ export default {
   background-color: #d4d4d4;
   left: 50%;
   margin-left: 0px;
-}
-@media screen and (max-width: 480px) {
+} */
+/* @media screen and (max-width: 480px) {
   .timeline:before {
     margin-left: -64px;
   }
-}
+} */
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
@@ -241,15 +240,15 @@ export default {
 .timeline > li > .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid #d4d4d4;
-  padding: 30px;
+  /* border: 1px solid #d4d4d4; */
+  padding: 15px;
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-.timeline > li > .timeline-panel:before {
+/* .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 80px;
   right: -15px;
@@ -259,8 +258,8 @@ export default {
   border-right: 0 solid #ccc;
   border-bottom: 15px solid transparent;
   content: " ";
-}
-.timeline > li > .timeline-panel:after {
+} */
+/* .timeline > li > .timeline-panel:after {
   position: absolute;
   top: 81px;
   right: -14px;
@@ -270,10 +269,10 @@ export default {
   border-right: 0 solid #fff;
   border-bottom: 14px solid transparent;
   content: " ";
-}
+} */
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-panel {
-    width: 75% !important;
+    width: 100% !important;
   }
   .timeline > li > .timeline-panel:before {
     top: 30px;
@@ -282,7 +281,7 @@ export default {
     top: 31px;
   }
 }
-.timeline > li > .timeline-badge {
+/* .timeline > li > .timeline-badge {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -303,16 +302,16 @@ export default {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-}
+} */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
     width: 60px;
     height: 60px;
     margin-left: -20px !important;
   }
-}
-.timeline > li.timeline-inverted > .timeline-panel {
+} */
+/* .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
@@ -320,17 +319,17 @@ export default {
   border-right-width: 15px;
   left: -15px;
   right: auto;
-}
-.timeline > li.timeline-inverted > .timeline-panel:after {
+} */
+/* .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
   right: auto;
-}
+} */
 
-.timeline-title {
+/* .timeline-title {
   margin-top: 0;
-}
+} */
 
 .date {
   display: block;
@@ -350,7 +349,7 @@ export default {
   margin-top: 5px;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   ul.timeline:before {
     left: 90px;
   }
@@ -384,5 +383,5 @@ export default {
     left: -14px;
     right: auto;
   }
-}
+} */
 </style>

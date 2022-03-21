@@ -2,25 +2,24 @@
   <div class="syw-cover">
     <div class="syw-overlay syw-header"></div>
     <div class="syw-cover syw-header text-center syw-greeting-background">
+      <div class="animate__animated animate__fadeIn animate__slower syw-greeting-body">
+        <div class="col syw-section-head text-center syw-wedding-info">
+          <p class="simply-date">{{ getWeddingDateTime() }}</p>
+          <p class="simply-date" style="font-size: 15px;">서울 강남구 봉은사로 637 노블발렌티 (삼성)</p>
+        </div>
+      </div>
       <div class="display-t">
         <div class="display-tc">
           <div class="container">
-            <div class="animate__animated animate__fadeIn animate__slower">
-              <div class="col syw-section-head text-center">
-                <h2>The Wedding</h2>
-                <p class="simply-date">{{ getWeddingDateTime() }}</p>
-                <p class="simply-date" style="font-size: 15px;">서울 강남구 봉은사로 637 노블발렌티(삼성)</p>
-              </div>
-            </div>
             <div class="custum-heart">
               <div>
-                <span class="simply-amount">{{getDiffDay()}} Days</span>
+                <span class="simply-amount">D-{{getDiffDay()}}</span>
                 <span class="simply-word">{{getDiffHour()}}:{{getDiffMinute()}}:{{getDiffSecond()}}</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   </div>
 </template>
@@ -84,6 +83,14 @@ export default {
 };
 </script>
 <style scoped>
+.syw-wedding-info {
+  padding-top: 40px;
+}
+
+.syw-greeting-body {
+  vertical-align:bottom !important;
+}
+
 .syw-greeting-background {
   background-image: url(~@/assets/img/gallery/studio/IMG_1053_3.jpeg);
   background-size: 100% 100%;
@@ -92,7 +99,7 @@ export default {
 
 .syw-countdown {
   /*background: #F69D9D;*/
-  padding: 1em 0;
+  /* padding: 1em 0; */
 }
 
 .syw-countdown .countdown {
@@ -102,16 +109,16 @@ export default {
 }
 
 .syw-countdown .countdown span {
-  margin: 0 15px;
-  border-top: 2px !important;
-  border-bottom: 2px !important;
+  /* margin: 0 10px; */
+  /* border-top: 2px !important; */
+  /* border-bottom: 2px !important; */
   display: inline-block;
   font-family: "Montez", cursive;
 }
 
 .syw-countdown .countdown small {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -119,21 +126,21 @@ export default {
 
 .custum-heart {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   /*background: white; !* rgba(241, 78, 149, 0.8); *!*/
-  margin: 0 4px;
-  margin-top: 10px;
+  /* margin: 0 4px; */
+  /* margin-top: 20px; */
   animation: pulse 1s ease infinite;
-  padding-top: 35px;
+  padding-top: 25px;
 }
 .custum-heart::before, .custum-heart::after {
   z-index: -1000;
   content: "";
   position: absolute;
   top: 0;
-  width: 100px;
-  height: 150px;
+  width: 75px;
+  height: 110px;
   border-radius: 50px 50px 0 0;
   background: white;
 }
@@ -168,31 +175,32 @@ export default {
 .simply-section > div {
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
 }
 
 .simply-amount {
   color: black !important;
-  font-size: 20px !important;
+  font-size: 16px !important;
   font-family: "Sacramento", Arial, serif;
 }
 
 .simply-word {
   /*color: rgba(255, 255, 255, 0.7);*/
-  font-size: 15px !important;
+  font-size: 12px !important;
   display: block;
-  color: purple !important;
+  color: dimgray !important;
   font-family: "Sacramento", Arial, serif;
 }
 
 .simply-date {
   /*color: rgba(255, 255, 255, 0.7);*/
   /*font-size: 20px !important;*/
-  font-size: 23px;
+  font-size: 15px !important;
   display: block;
   color: white !important;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
   font-weight: bold;
 }
 </style>
