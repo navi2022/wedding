@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center">
-          <!-- <span>Our Memories</span> -->
+          <span>Our Memories</span>
           <h2>Gallery</h2>
         </div>
       </div>
@@ -90,7 +90,7 @@ export default {
 .syw-gallery-bg {
   /* background-color: rgba(0, 0, 0, 0.04); */
   /* background-color: #fff; */
-  background-color: rgba(0, 0, 0, 0.04);
+  /*background-color: rgba(0, 0, 0, 0.04);*/
   /* background: rgba(0, 0, 0, 0.1); */
   /* background-image: url(~@/assets/img/wood-brown-bg.webp); */
   /* position: relative;

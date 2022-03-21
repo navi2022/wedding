@@ -3,6 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center syw-contactus-head-color">
+          <span>Contact Us</span>
           <h2>Contact</h2>
         </div>
       </div>
@@ -187,7 +188,7 @@ export default {
 .syw-contactus-bg {
   position: relative;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.04);
+  /*background-color: rgba(0, 0, 0, 0.04);*/
 }
 
 .syw-contactus-bg::before {

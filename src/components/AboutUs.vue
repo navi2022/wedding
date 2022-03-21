@@ -76,7 +76,7 @@ export default {
 
 .syw-section-head h2, .syw-aboutus-head-color {
   /* color: #5a5a5a; */
-   color: lightgray !important;
+  /* color: lightgray !important;*/
   text-shadow:
    -1px -1px 0 #fff,
     1px -1px 0 #fff,

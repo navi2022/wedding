@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center">
-          <!-- <span>Be Our Guest</span> -->
+          <span>Be Our Guest</span>
           <h2 class="syw-weddinghall-head-color">WeddingHall</h2>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default {
   opacity: 0.85; */
   /* background: rgba(0, 0, 0, 0.07); */
   /* background-color: #fff; */
-  background-color: rgba(0, 0, 0, 0.08);
+  /*background-color: rgba(0, 0, 0, 0.08);*/
 }
 
 .font-himelody {

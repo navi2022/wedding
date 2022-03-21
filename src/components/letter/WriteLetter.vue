@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <h2>Write Letter</h2>
+          <h2>Write a Letter</h2>
         </div>
       </div>
       <form class="form-inline" v-on:submit.prevent>
