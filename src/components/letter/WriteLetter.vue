@@ -160,7 +160,8 @@ export default {
   /* color:  rgb(29, 155, 240); */
   /* color: #5a5a5a;
    */
-   color: rgb(29, 155, 240);
+   /* color: rgb(29, 155, 240); */
+    color: lightgray !important;
 }
 
 .is-invalid {

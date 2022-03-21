@@ -210,7 +210,8 @@ export default {
 }
 
 .syw-section-head h2, .syw-contactus-head-color {
-  color:  rgb(29, 155, 240);
+  /* color:  rgb(29, 155, 240); */
+   color: lightgray !important;
 }
 
 .font-himelody {

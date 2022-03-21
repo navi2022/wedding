@@ -101,7 +101,7 @@ export default {
   /* color:  rgb(29, 155, 240); */
   /* color: #5a5a5a;
    */
-   color: #5a5a5a !important;
+   color: lightgray !important;
    /* color: rgb(29, 155, 240); */
 }
 
