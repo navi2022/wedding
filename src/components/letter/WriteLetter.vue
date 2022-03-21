@@ -161,7 +161,7 @@ export default {
   /* color: #5a5a5a;
    */
    /* color: rgb(29, 155, 240); */
-    color: lightgray !important;
+   /* color: lightgray !important;*/
 }
 
 .is-invalid {
