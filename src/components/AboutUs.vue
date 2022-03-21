@@ -1,5 +1,5 @@
 <template>
-  <div class="syw-section">
+  <div class="syw-section pt-5">
     <div class="container">
       <div class="col syw-section-head text-center syw-aboutus-head-color">
         <span>Invitation Letter</span>
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </li>
-            <li class="animate-box">
+            <li class="animate-box mb-0">
               <div class="timeline-panel">
                 <div class="timeline-body text-center">
                   <p>코로나 우려로 참석하지 못하시더라도 괜찮습니다.</p>

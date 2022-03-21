@@ -174,7 +174,7 @@ export default {
 }
 .syw-weddinghall-head-color {
   /* color:  #5a5a5a !important; */
-   color: lightgray !important;
+  /* color: lightgray !important;*/
   /* text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
