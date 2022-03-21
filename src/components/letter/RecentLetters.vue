@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <h2 style="color: white">Recent Letters <i class="bi bi-mailbox"></i></h2>
+          <h2 style="color: white">Recent Letters</h2>
         </div>
       </div>
       <div class="row">
@@ -18,8 +18,8 @@
                class="syw-event-wrap"
           >
             <h3>{{ msg.creator }}</h3>
-            <pre class="p-1">{{ msg.content }}</pre>
             <p class="mt-3 syw-created-at">{{ msg.createdAt }}</p>
+            <pre class="p-1">{{ msg.content }}</pre>
           </div>
         </flicking>
       </div>
@@ -59,8 +59,8 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  /*background-image: url(~@/assets/img/bg/wood-black-bg.jpeg);*/
-  background-image: url(https://i.pinimg.com/originals/91/a7/ae/91a7ae81b7694af89ded5e3a609c3bf4.png);
+  background-image: url(~@/assets/img/bg/rose-letter.jpeg);
+  /* background-image: url(https://i.pinimg.com/originals/91/a7/ae/91a7ae81b7694af89ded5e3a609c3bf4.png); */
   background-size: 100% 100%;
   opacity: 1.0;
   height: 600px;
@@ -69,11 +69,19 @@ export default {
 }
 
 .syw-created-at {
-  color: #fff;
+  /* color: black;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 2px;
-  font-family: 'Sacramento', Arial, serif;
+  font-family: 'Sacramento', Arial, serif; */
+
+  font-family: "Open Sans", Arial, sans-serif;
+  /* color: #333333; */
+  color: rgba(0, 0, 0, 0.55);
+  padding-bottom: 5px;
+  /* font-size: 13px; */
+  font-size: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.55);
 }
 
 .syw-section-head {
@@ -87,29 +95,42 @@ export default {
   /*letter-spacing: 1px;*/
   width: 100%;
   height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   float: left;
 }
 
 .syw-event-wrap h3 {
-  font-size: 22px;
-  color: rgba(255, 255, 255, 1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
-  display: block;
+  font-family: "Open Sans", Arial, sans-serif;
+  /* color: #333333; */
+  color: rgba(0, 0, 0, 0.85);
   padding: 5px;
-  letter-spacing: 5px;
+  /* font-size: 13px; */
+  font-size: 17px;
+  /* color: rgba(255, 255, 255, 1); */
+  /* color: black; */
+  
+  /* display: block;
+  padding: 5px;
+  letter-spacing: 5px; */
 }
 
 .syw-event-wrap span {
   display: block;
-  color: rgba(255, 255, 255, .8);
+  color: black;
 }
 
 .syw-event-wrap pre {
-  font-size: 19px;
+  /* font-size: 19px;
   font-weight: bold;
   display: block;
-  color: rgba(255, 255, 255, 1.0);
-  max-height: 250px;
+  color: black;
+  height: 150px; */
+
+  color: rgba(0, 0, 0, 0.85);
+  height: 150px;
 
   white-space: pre-wrap;       /* css-3 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */

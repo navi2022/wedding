@@ -97,11 +97,6 @@ export default {
   /*background-position: 0px 0px;*/
 }
 
-.syw-countdown {
-  /*background: #F69D9D;*/
-  /* padding: 1em 0; */
-}
-
 .syw-countdown .countdown {
   margin-bottom: 0;
   font-size: 24px !important;

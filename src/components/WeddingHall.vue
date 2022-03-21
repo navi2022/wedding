@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center">
-          <span>Be Our Guest</span>
+          <!-- <span>Be Our Guest</span> -->
           <h2 class="syw-weddinghall-head-color">Wedding Hall</h2>
         </div>
       </div>
@@ -12,8 +12,8 @@
       </div>
       <div class="row syw-section-content text-center">
         <div class="desc">
-          <h3>노블 발렌티(삼성)</h3>
-          <p><strong>주소: 서울시 강남구 봉은사로 637</strong></p>
+          <p class="font-himelody-title">노블 발렌티(삼성)</p>
+          <strong class="font-himelody-title">주소: 서울시 강남구 봉은사로 637</strong>
         </div>
         <div class="px-5 pb-1">
           <naver-maps
@@ -136,10 +136,34 @@ export default {
   /*background-image: url(https://www.kindpng.com/picc/m/57-578735_clip-art-wedding-invitation-floral-design-flower-background.png);*/
   /*background-image: url(https://banner2.cleanpng.com/20190220/rag/kisspng-floral-design-borders-and-frames-flower-image-wedd-5c6dc9630f89e6.7354142515506988510637.jpg);*/
   /*background-image: url(https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcGRmbG93ZXIxMWJhdGNoMy10YXVzLTAyYS1qb2I2NF8xLnBuZw.png?s=gH2Ierg1BwRdivQ0_sCLkh95G6rcvhvbDcxfRe_bop0);*/
-  background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm123-flower1-gloy-35-l_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=baa50b181a8aa81ac4b5d349d13f7d57);
-  background-size: 100% 100%;
-  opacity: 0.85;
-  /*background: rgba(0, 0, 0, 0.07);*/
+  /* background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm123-flower1-gloy-35-l_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=baa50b181a8aa81ac4b5d349d13f7d57); */
+  /* background-size: 100% 100%;
+  opacity: 0.85; */
+  /* background: rgba(0, 0, 0, 0.07); */
+  /* background-color: #fff; */
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.font-himelody {
+  font-family: "Open Sans", Arial, sans-serif;
+  /* color: #333333; */
+  color: #848484;
+  padding: 5px;
+  /* font-size: 13px; */
+  font-size: 12px;
+
+  /* font-weight: 900; */
+}
+
+.font-himelody-title {
+  font-family: "Open Sans", Arial, sans-serif;
+  /* color: #333333; */
+  color: rgba(0, 0, 0, 0.85);
+  padding: 5px;
+  /* font-size: 13px; */
+  font-size: 17px;
+
+  /* font-weight: 900; */
 }
 
 .syw-wedding-hall-map-icon {
@@ -149,11 +173,11 @@ export default {
   margin: 5px;
 }
 .syw-weddinghall-head-color {
-  color:  dimgray !important;
-  text-shadow:
+  color:  #5a5a5a !important;
+  /* text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+     1px 1px 0 #fff; */
 }
 </style>

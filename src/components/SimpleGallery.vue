@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center">
-          <span>Our Memories</span>
+          <!-- <span>Our Memories</span> -->
           <h2>Gallery</h2>
         </div>
       </div>
@@ -88,14 +88,23 @@ export default {
 <style scoped>
 
 .syw-gallery-bg {
-  /* background: #FAFAD2 */
+  /* background-color: rgba(0, 0, 0, 0.04); */
+  /* background-color: #fff; */
+  background-color: rgba(0, 0, 0, 0.04);
   /* background: rgba(0, 0, 0, 0.1); */
   /* background-image: url(~@/assets/img/wood-brown-bg.webp); */
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 
-.syw-gallery-bg::before {
+.syw-section-head h2, .syw-contactus-head-color {
+  /* color:  rgb(29, 155, 240); */
+  /* color: #5a5a5a;
+   */
+   color: rgb(29, 155, 240);
+}
+
+/* .syw-gallery-bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -106,7 +115,7 @@ export default {
   z-index: -1;
   background-image: url(~@/assets/img/bg/wood-brown-bg.webp);
   background-size: 100% 100%;
-}
+} */
 
 .syw-content-galleries h2 {
   color: black;

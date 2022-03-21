@@ -3,18 +3,18 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center syw-contactus-head-color">
-          <h2>Contact Us</h2>
+          <h2>Contact</h2>
         </div>
       </div>
-      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col-6">
-          <h2 class="font-himelody">신랑 <strong>이승민</strong></h2>
+      <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn contact-body">
+        <div class="col-6 contact-info">
+          <h2 class="font-himelody-title">신랑 <span class="font-himelody-title-name">이승민</span></h2>
           <div>
-            <strong class="font-himelody">연락처: {{ seungminInfo.phone }}</strong>
+            <span class="font-himelody">연락처: {{ seungminInfo.phone }}</span>
             <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.phone' v-clipboard:success="onCopy"></i>
           </div>
           <div>
-            <strong class="font-himelody">{{ seungminInfo.bank }}: {{ seungminInfo.account }}</strong>
+            <span class="font-himelody">{{ seungminInfo.bank }}: {{ seungminInfo.account }}</span>
             <i class="bi bi-clipboard" v-clipboard:copy='seungminInfo.bankAccount'
                v-clipboard:success="onCopy"></i>
           </div>
@@ -31,14 +31,14 @@
             </a>
           </div>
         </div>
-        <div class="col-6">
-          <h2 class="font-himelody">신부 <strong>강이경</strong></h2>
+        <div class="col-6 contact-info">
+          <h2 class="font-himelody-title">신부 <span class="font-himelody-title-name">강이경</span></h2>
           <div>
-            <strong class="font-himelody">연락처: {{ yikyungInfo.phone }}</strong>
+            <span class="font-himelody">연락처: {{ yikyungInfo.phone }}</span>
             <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.phone' v-clipboard:success="onCopy"></i>
           </div>
           <div>
-            <strong class="font-himelody">{{ yikyungInfo.bank }}: {{ yikyungInfo.account }}</strong>
+            <span class="font-himelody">{{ yikyungInfo.bank }}: {{ yikyungInfo.account }}</span>
             <i class="bi bi-clipboard" v-clipboard:copy='yikyungInfo.bankAccount'
                v-clipboard:success="onCopy"></i>
           </div>
@@ -58,12 +58,12 @@
       </div>
 
       <div class="row syw-section-content text-center animate__animated animate__slow animate__fadeIn">
-        <div class="col-6">
-          <h2 class="font-himelody pb-4">신랑측 혼주</h2>
+        <div class="col-6 contact-info">
+          <h2 class="font-himelody pb-4 ">신랑측 혼주</h2>
           <div>
 
-            <h3 class="font-himelody">父 <strong>이평호</strong></h3>
-            <strong class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</strong>
+            <h2 class="font-himelody-title">父 <span class="font-himelody-title-name">이평호</span></h2>
+            <div class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</div>
             <div>
               <a :href="seungminFatherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -77,8 +77,8 @@
               </a>
             </div>
 
-            <h3 class="font-himelody">母 <strong>손무선</strong></h3>
-            <strong class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</strong>
+            <h2 class="font-himelody-title">母 <span class="font-himelody-title-name">손무선</span></h2>
+            <div class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</div>
             <div>
               <a :href="seungminMotherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -93,12 +93,11 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 contact-info">
           <h2 class="font-himelody pb-4">신부측 혼주</h2>
           <div>
-
-            <h3 class="font-himelody">父 <strong>강재규</strong></h3>
-            <strong class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</strong>
+            <h2 class="font-himelody-title">父 <span class="font-himelody-title-name">강재규</span></h2>
+            <div class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</div>
             <div>
               <a :href="yikyungFatherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -112,8 +111,8 @@
               </a>
             </div>
 
-            <h3 class="font-himelody">母 <strong>박정희</strong></h3>
-            <strong class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</strong>
+            <h2 class="font-himelody-title">母 <span class="font-himelody-title-name">박정희</span></h2>
+            <div class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</div>
             <div>
               <a :href="yikyungMotherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -173,9 +172,22 @@ export default {
 };
 </script>
 <style scoped>
+
+.contact-info {
+  background-color: #fff;
+  border: 1px solid rgb(239, 243, 244);
+  border-radius: 4px;
+  margin: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 47%;
+}
 .syw-contactus-bg {
   position: relative;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 .syw-contactus-bg::before {
@@ -189,31 +201,54 @@ export default {
   z-index: -1;
   /*background-image: url(https://i.pinimg.com/736x/a3/fe/82/a3fe82109b446674b85b300d22c038be.jpg);*/
   /*background-image: url(~@/assets/img/bg/flowers.jpeg);*/
-  background-image: url(https://www.seekpng.com/png/full/13-130566_watercolor-illustration-for-wedding-flower-background-invitation-free.png);
+  /* background-image: url(https://www.seekpng.com/png/full/13-130566_watercolor-illustration-for-wedding-flower-background-invitation-free.png); */
   background-size: 100% 100%;
 }
 
+.contact-body {
+  padding-bottom: 40px;
+}
+
 .syw-section-head h2, .syw-contactus-head-color {
-  /* color:  #9034bb; */
-  /*text-shadow:*/
-  /* -1px -1px 0 #fff,  */
-  /*  1px -1px 0 #fff,*/
-  /*  -1px 1px 0 #fff,*/
-  /*   1px 1px 0 #fff;*/
+  color:  rgb(29, 155, 240);
 }
 
 .font-himelody {
-  font-family: 'Hi Melody', cursive !important;
-  color: #333333;
+  font-family: "Open Sans", Arial, sans-serif;
+  /* color: #333333; */
+  color: #848484;
   padding: 5px;
+  /* font-size: 13px; */
+  font-size: 12px;
 
   /* font-weight: 900; */
 }
 
+.font-himelody-title {
+  font-family: "Open Sans", Arial, sans-serif;
+  /* color: #333333; */
+  color: rgba(0, 0, 0, 0.85);
+  padding: 5px;
+  /* font-size: 13px; */
+  font-size: 14px;
+
+  /* font-weight: 900; */
+}
+.font-himelody-title-name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
 
 .syw-contactus-icon.font-himelody {
   color: #fff;
+  /* font-family: "Open Sans", Arial, sans-serif; */
+  
+  /* font-weight: 600; */
 }
+/* .syw-font-hi-melody {
+  
+} */
 
 .syw-contactus-icon {
   /*float: left;*/
@@ -222,7 +257,7 @@ export default {
   width: 30px;
   height: 30px;
   /* background: rgb(248, 246, 248); */
-  background: #F14E95;
+  background: rgb(29, 155, 240);
   display: inline-block;
   text-align: center;
   justify-content: center;

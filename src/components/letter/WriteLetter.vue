@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <h2>Write a Letter <i class="bi bi-mailbox"></i></h2>
+          <h2>Write a Letter</h2>
         </div>
       </div>
       <form class="form-inline" v-on:submit.prevent>
@@ -153,8 +153,15 @@ export default {
   width: 100%;
   height: 500px;
   opacity: 0.7;
-  background-image: url(~@/assets/img/bg/flowers-pink.jpeg);
+  /* background-image: url(~@/assets/img/bg/flowers-pink.jpeg); */
   background-size: 100% 100%;
+}
+
+.syw-section-head h2, .syw-contactus-head-color {
+  /* color:  rgb(29, 155, 240); */
+  /* color: #5a5a5a;
+   */
+   color: rgb(29, 155, 240);
 }
 
 .is-invalid {

@@ -127,7 +127,7 @@ p, ul, ol {
 }
 
 .syw-primary-menu .syw-sub-menu a:hover {
-  color: #F69D9D !important;
+  color: rgb(29, 155, 240) !important;
 }
 
 .syw-section {
@@ -213,7 +213,7 @@ p, ul, ol {
 }
 
 .btn.btn-primary {
-  background: #F69D9D;
+  background: rgb(29, 155, 240);
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -221,7 +221,7 @@ p, ul, ol {
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #F69D9D;
+  background: rgb(29, 155, 240);
   color: #fff !important;
 }
 
