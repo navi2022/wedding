@@ -131,13 +131,13 @@ p, ul, ol {
 }
 
 .syw-section {
-  padding: 1.0rem 0;
+  padding: 1.5rem 0;
   clear: both;
 }
 
 @media screen and (max-width: 768px) {
   .syw-section {
-    padding: 1.0rem 0;
+    padding: 1.5rem 0;
   }
 }
 

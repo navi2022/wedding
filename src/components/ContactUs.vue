@@ -178,12 +178,13 @@ export default {
   background-color: #fff;
   border: 1px solid rgb(239, 243, 244);
   border-radius: 4px;
-  margin: 5px;
-  padding-left: 0px;
+  /* margin: 1px; */
+  margin: 1%;
+  /* padding-left: 0px;
   padding-right: 0px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  width: 47%;
+  padding-bottom: 10px; */
+  width: 48%;
 }
 .syw-contactus-bg {
   position: relative;

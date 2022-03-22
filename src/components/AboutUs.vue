@@ -239,8 +239,8 @@ export default {
   clear: both;
 }
 .timeline > li > .timeline-panel {
-  width: 40%;
-  float: left;
+  /* width: 40%; */
+  /* float: left; */
   /* border: 1px solid #d4d4d4; */
   padding: 15px;
   position: relative;
@@ -271,7 +271,7 @@ export default {
   border-bottom: 14px solid transparent;
   content: " ";
 } */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .timeline > li > .timeline-panel {
     width: 100% !important;
   }
@@ -281,7 +281,7 @@ export default {
   .timeline > li > .timeline-panel:after {
     top: 31px;
   }
-}
+} */
 /* .timeline > li > .timeline-badge {
   background-size: cover;
   background-position: top center;

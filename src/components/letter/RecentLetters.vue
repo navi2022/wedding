@@ -63,7 +63,7 @@ export default {
   background-image: url(https://media.istockphoto.com/photos/flower-background-for-holidays-picture-id1206077453?k=20&m=1206077453&s=170667a&w=0&h=CK8WRiInYwrgymXK1l5D1Uym2waYiObGO0p1uiLK3BU=);
   background-size: 100% 100%;
   opacity: 1.0;
-  height: 600px;
+  height: 400px;
   /* background: #f7accc; */
   /* background: rgba(134, 4, 95, 0.582); */
 }
@@ -97,8 +97,8 @@ export default {
   height: 100%;
   padding-top: 10%;
   padding-bottom: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   float: left;
 }
 
