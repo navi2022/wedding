@@ -125,7 +125,7 @@ export default {
         // {src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
         // {src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
 
-        {src: require("@/assets/img/gallery/2020_2021/20200726_200439.jpg")},
+        // {src: require("@/assets/img/gallery/2020_2021/20200726_200439.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20201031_202534.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20210210_151401.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20210808_182957.jpg")},
