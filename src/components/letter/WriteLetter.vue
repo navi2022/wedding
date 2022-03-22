@@ -123,7 +123,7 @@ export default {
           "content": contentInfo.value.content
         }
         axios.put(url, letter).then((response) => {
-          alert("감사합니다.")
+          alert("감사합니다. 행복하게 잘 살겠습니다.")
           router.go();
           if (!response) {
             console.log(response);
