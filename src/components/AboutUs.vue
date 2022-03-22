@@ -77,11 +77,11 @@ export default {
 .syw-section-head h2, .syw-aboutus-head-color {
   /* color: #5a5a5a; */
   /* color: lightgray !important;*/
-  text-shadow:
+  /* text-shadow:
    -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+     1px 1px 0 #fff; */
 }
 
 .syw-img-responsive {
@@ -113,7 +113,7 @@ export default {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: rgb(238, 67, 90);
+  color: #f2267f;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;

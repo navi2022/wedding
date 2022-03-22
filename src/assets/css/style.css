@@ -174,7 +174,7 @@ p, ul, ol {
 }
 
 .syw-section-head h2 {
-  font-size: 60px;
+  font-size: 33px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
@@ -213,7 +213,7 @@ p, ul, ol {
 }
 
 .btn.btn-primary {
-  background: rgb(29, 155, 240);
+  background: #F14E95;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;

@@ -176,13 +176,13 @@ export default {
 
 .simply-amount {
   color: black !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-family: "Sacramento", Arial, serif;
 }
 
 .simply-word {
   /*color: rgba(255, 255, 255, 0.7);*/
-  font-size: 12px !important;
+  font-size: 10px !important;
   display: block;
   color: dimgray !important;
   font-family: "Sacramento", Arial, serif;

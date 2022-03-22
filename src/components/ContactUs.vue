@@ -259,7 +259,7 @@ export default {
   width: 30px;
   height: 30px;
   /* background: rgb(248, 246, 248); */
-  background: rgb(29, 155, 240);
+  background: #fa89bb;
   display: inline-block;
   text-align: center;
   justify-content: center;

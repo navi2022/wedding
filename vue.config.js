@@ -5,7 +5,6 @@ module.exports = {
         : '/',
     outputDir: 'dist',
     devServer: {
-        host: 'localhost',
-        disableHostCheck: true
+         disableHostCheck: true
     }
 }

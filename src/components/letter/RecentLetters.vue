@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <h2 style="color: white">Recent Letters</h2>
+          <h2>Recent a Letter</h2>
         </div>
       </div>
       <div class="row">
@@ -59,8 +59,8 @@ export default {
 </script>
 <style scoped>
 .syw-recent-letter-bg {
-  background-image: url(~@/assets/img/bg/rose-letter.jpeg);
-  /* background-image: url(https://i.pinimg.com/originals/91/a7/ae/91a7ae81b7694af89ded5e3a609c3bf4.png); */
+  /* background-image: url(~@/assets/img/bg/flowers-colorful.jpg); */
+  background-image: url(https://media.istockphoto.com/photos/flower-background-for-holidays-picture-id1206077453?k=20&m=1206077453&s=170667a&w=0&h=CK8WRiInYwrgymXK1l5D1Uym2waYiObGO0p1uiLK3BU=);
   background-size: 100% 100%;
   opacity: 1.0;
   height: 600px;
@@ -80,7 +80,7 @@ export default {
   color: rgba(0, 0, 0, 0.55);
   padding-bottom: 5px;
   /* font-size: 13px; */
-  font-size: 15px;
+  font-size: 12px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.55);
 }
 

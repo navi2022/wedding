@@ -150,8 +150,8 @@ export default {
 <style scoped>
 .syw-write-letter-bg {
   width: 100%;
-  height: 500px;
-  opacity: 0.7;
+  height: 400px;
+  /* opacity: 0.7; */
   /* background-image: url(~@/assets/img/bg/flowers-pink.jpeg); */
   background-size: 100% 100%;
 }

@@ -122,8 +122,8 @@ export default {
         {src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200305_200242.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200321_121847.jpg")},
-        {src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
-        {src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
+        // {src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
+        // {src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
 
         {src: require("@/assets/img/gallery/2020_2021/20200726_200439.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20201031_202534.jpg")},
@@ -152,7 +152,7 @@ export default {
   /* color: #5a5a5a;
    */
    /* color: #5a5a5a !important; */
-   color: lightgray !important;
+   /* color: lightgray !important; */
    /* color: rgb(29, 155, 240); */
 }
 
