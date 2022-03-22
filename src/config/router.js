@@ -1,6 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import Main from "@/components/Main";
-import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
 import GuestBook from "@/components/GuestBook";
 
@@ -10,17 +9,13 @@ const routes = [
         component: Main
     },
     {
-        path: '/contact',
-        component: Contact
+        path: '/gallery',
+        component: Gallery
     },
     {
         path: '/guestBook',
         component: GuestBook
     },
-    {
-        path: '/gallery',
-        component: Gallery
-    }
 ]
 
 const router = createRouter({
