@@ -13,7 +13,7 @@
       <div class="row syw-section-content text-center">
         <div class="desc">
           <p class="font-himelody-title">노블 발렌티(삼성)</p>
-          <strong class="font-himelody-title">주소: 서울시 강남구 봉은사로 637</strong>
+          <p class="font-himelody-title">주소: 서울시 강남구 봉은사로 637</p>
         </div>
         <div class="px-5 pb-1">
           <naver-maps
@@ -159,11 +159,9 @@ export default {
   font-family: "Open Sans", Arial, sans-serif;
   /* color: #333333; */
   color: rgba(0, 0, 0, 0.85);
-  padding: 5px;
+  padding: 3px;
   /* font-size: 13px; */
   font-size: 17px;
-
-  /* font-weight: 900; */
 }
 
 .syw-wedding-hall-map-icon {

@@ -187,6 +187,7 @@ export default {
   width: 48%;
 }
 .syw-contactus-bg {
+  padding: 0rem 0;
   position: relative;
   z-index: 1;
   /*background-color: rgba(0, 0, 0, 0.04);*/
