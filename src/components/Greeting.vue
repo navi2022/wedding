@@ -5,7 +5,7 @@
       <div class="animate__animated animate__fadeIn animate__slower syw-greeting-body">
         <div class="col syw-section-head text-center syw-wedding-info">
           <p class="simply-date">{{ getWeddingDateTime() }}</p>
-          <div class="simply-date" style="font-size: 17px;">- 노블발렌티 (삼성) -</div>
+          <div class="simply-date" style="font-size: 18px;">- 노블발렌티 (삼성) -</div>
           <div class="simply-date pt-1" style="font-size: 13px;">서울 강남구 봉은사로 637</div>
         </div>
       </div>
@@ -192,11 +192,11 @@ export default {
 .simply-date {
   /*color: rgba(255, 255, 255, 0.7);*/
   /*font-size: 20px !important;*/
-  font-size: 17px;
+  font-size: 19px;
   display: block;
   color: white !important;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   /* z-index: 100; */
 }

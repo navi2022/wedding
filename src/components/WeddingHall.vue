@@ -156,9 +156,10 @@ export default {
 }
 
 .font-himelody-title {
-  font-family: "Open Sans", Arial, sans-serif;
+  /*font-family: "Open Sans", Arial, sans-serif;*/
   /* color: #333333; */
-  color: rgba(0, 0, 0, 0.85);
+  color: #848484;
+  /*color: rgba(0, 0, 0, 0.85);*/
   padding: 3px;
   /* font-size: 13px; */
   font-size: 17px;
