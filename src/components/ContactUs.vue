@@ -64,7 +64,7 @@
           <div>
 
             <h2 class="font-himelody-title">父 <span class="font-himelody-title-name">이평호</span></h2>
-            <div class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</div>
+            <!-- <div class="font-himelody">연락처: {{ seungminFatherInfo.phone }}</div> -->
             <div>
               <a :href="seungminFatherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -79,7 +79,7 @@
             </div>
 
             <h2 class="font-himelody-title">母 <span class="font-himelody-title-name">손무선</span></h2>
-            <div class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</div>
+            <!-- <div class="font-himelody">연락처: {{ seungminMotherInfo.phone }}</div> -->
             <div>
               <a :href="seungminMotherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -98,7 +98,7 @@
           <h2 class="font-himelody pb-4">신부측 혼주</h2>
           <div>
             <h2 class="font-himelody-title">父 <span class="font-himelody-title-name">강재규</span></h2>
-            <div class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</div>
+            <!-- <div class="font-himelody">연락처: {{ yikyungFatherInfo.phone }}</div> -->
             <div>
               <a :href="yikyungFatherInfo.telHref">
                 <span class=syw-contactus-icon>
@@ -113,7 +113,7 @@
             </div>
 
             <h2 class="font-himelody-title">母 <span class="font-himelody-title-name">박정희</span></h2>
-            <div class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</div>
+            <!-- <div class="font-himelody">연락처: {{ yikyungMotherInfo.phone }}</div> -->
             <div>
               <a :href="yikyungMotherInfo.telHref">
                 <span class=syw-contactus-icon>

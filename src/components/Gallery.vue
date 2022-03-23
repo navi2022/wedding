@@ -168,9 +168,9 @@ export default {
 
 .syw-content-galleries div img {
   margin-top: 5%;
-  border-radius: 5rem;
-  width: 117px;
-  height: 113px;
+  border-radius: 6rem;
+  width: 180px;
+  height: 180px;
 }
 
 .syw-content-galleries-flicking {
@@ -178,7 +178,7 @@ export default {
   padding: 1px;
   border: 1px solid white;
   width: 83%;
-  height: 300px;
+  height: 330px;
 }
 
 </style>
