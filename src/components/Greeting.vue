@@ -2,14 +2,14 @@
   <div class="syw-cover">
     <div class="syw-overlay syw-header"></div>
     <div class="syw-cover syw-header text-center syw-greeting-background">
-      <div class="animate__animated animate__fadeIn animate__slower syw-greeting-body">
+      <div class="syw-greeting-body animate__animated animate__fadeIn animate__slower">
         <div class="col syw-section-head text-center syw-wedding-info">
           <p class="simply-date">{{ getWeddingDateTime() }}</p>
-          <div class="simply-date" style="font-size: 18px;">- 노블발렌티 (삼성) -</div>
-          <div class="simply-date pt-1" style="font-size: 13px;">서울 강남구 봉은사로 637</div>
+          <div class="simply-date">- 노블발렌티 (삼성) -</div>
+          <div class="simply-date pt-1" style="font-size: 15px;">서울 강남구 봉은사로 637</div>
         </div>
       </div>
-      <div class="display-t">
+      <div class="display-t pt-2">
         <div class="display-tc">
           <div class="container">
             <div class="custum-heart">
@@ -84,6 +84,17 @@ export default {
 };
 </script>
 <style scoped>
+.syw-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .syw-wedding-info {
   padding-top: 40px;
 }
@@ -192,11 +203,10 @@ export default {
 .simply-date {
   /*color: rgba(255, 255, 255, 0.7);*/
   /*font-size: 20px !important;*/
-  font-size: 19px;
+  font-size: 21px;
   display: block;
   color: white !important;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 18px;
   font-weight: bold;
   /* z-index: 100; */
 }
