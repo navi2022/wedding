@@ -68,7 +68,7 @@ export default {
         {src: require("@/assets/img/gallery/studio/IMG_1053_3.jpeg")},
         {src: require("@/assets/img/gallery/studio/IMG_1082_2.jpeg")},
         {src: require("@/assets/img/gallery/studio/IMG_1123_2.jpeg")},
-        {src: require("@/assets/img/gallery/studio/IMG_1341_2.jpeg")},
+        // {src: require("@/assets/img/gallery/studio/IMG_1341_2.jpeg")},
       ]
     };
     const plugins = ref([new Fade("", 0)]);

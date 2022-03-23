@@ -29,29 +29,13 @@
                       horizontal: true,
                       renderOnlyVisible: true}"
             :plugins="plugins">
-          <img v-for="(img, index) in imagesByYear['2018-2019']"
+          <img v-for="(img, index) in imagesByYear['2018-2022']"
                :key="`${index}`"
                :src="img.src"
-               @click="showImages(imagesByYear['2018-2019'], index)"
+               @click="showImages(imagesByYear['2018-2022'], index)"
                class="syw-content-galleries-flicking"
           >
         </flicking>
-        <h2 class="syw-section-head">2018-2019</h2>
-      </div>
-      <div class="row syw-content-galleries text-center animate__animated animate__slow animate__fadeIn">
-        <flicking
-            :options="{circular: true,
-                      horizontal: true,
-                      renderOnlyVisible: true}"
-            :plugins="plugins">
-          <img v-for="(img, index) in imagesByYear['2020-2021']"
-               :key="`${index}`"
-               :src="img.src"
-               @click="showImages(imagesByYear['2020-2021'], index)"
-               class="syw-content-galleries-flicking"
-          >
-        </flicking>
-        <h2 class="syw-section-head">2020-2021</h2>
       </div>
     </div>
     <vue-easy-lightbox
@@ -98,29 +82,27 @@ export default {
         {src: require("@/assets/img/gallery/studio/IMG_1053_3.jpeg")},
         {src: require("@/assets/img/gallery/studio/IMG_1082_2.jpeg")},
         {src: require("@/assets/img/gallery/studio/IMG_1123_2.jpeg")},
-        {src: require("@/assets/img/gallery/studio/IMG_1341_2.jpeg")},
+        // {src: require("@/assets/img/gallery/studio/IMG_1341_2.jpeg")},
       ]
     };
     const imagesByYear = {
-      '2018-2019': [
+      '2018-2022': [
         {src: require("@/assets/img/gallery/2018_2019/20181225_182052.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20181231_215158.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20190713_211232.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20190726_150521.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20190816_204335.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20181231_215158.jpg")},
+        {src: require("@/assets/img/gallery/2018_2019/20190713_211246.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20190726_150521.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20190816_204335.jpg")},
 
         {src: require("@/assets/img/gallery/2018_2019/20190816_222823.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20190816_223051.jpg")},
         {src: require("@/assets/img/gallery/2018_2019/20190912_110206.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20190912_124925.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20191012_165101.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20190912_124925.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20191012_165101.jpg")},
 
-        {src: require("@/assets/img/gallery/2018_2019/20191019_194953.jpg")},
-        {src: require("@/assets/img/gallery/2018_2019/20191019_200946.jpg")},
-      ],
-      '2020-2021': [
-        {src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
-        {src: require("@/assets/img/gallery/2020_2021/20200305_200242.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20191019_194953.jpg")},
+        // {src: require("@/assets/img/gallery/2018_2019/20191019_200946.jpg")},
+        // {src: require("@/assets/img/gallery/2020_2021/20200229_155559.jpg")},
+        // {src: require("@/assets/img/gallery/2020_2021/20200305_200242.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20200321_121847.jpg")},
         // {src: require("@/assets/img/gallery/2020_2021/20200605_184533.jpg")},
         // {src: require("@/assets/img/gallery/2020_2021/20200726_190712.jpg")},
@@ -129,7 +111,7 @@ export default {
         {src: require("@/assets/img/gallery/2020_2021/20201031_202534.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20210210_151401.jpg")},
         {src: require("@/assets/img/gallery/2020_2021/20210808_182957.jpg")},
-      ],
+      ]
     }
     const plugins = ref([new Fade("", 0)]);
     return {
@@ -187,8 +169,8 @@ export default {
 .syw-content-galleries div img {
   margin-top: 5%;
   border-radius: 5rem;
-  width: 200px;
-  height: 180px;
+  width: 117px;
+  height: 113px;
 }
 
 .syw-content-galleries-flicking {
