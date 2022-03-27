@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="syw-section-head text-center">
-          <h2>Recent a Letter</h2>
+          <h2>Recent Letters</h2>
         </div>
       </div>
       <div class="row">
