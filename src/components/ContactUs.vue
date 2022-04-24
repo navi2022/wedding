@@ -1,5 +1,5 @@
 <template>
-  <div class="syw-cover syw-section syw-contactus-bg" style="height: 500px">
+  <div class="syw-cover syw-section syw-contactus-bg" style="height: 450px">
     <div class="container">
       <div class="row animate__animated animate__fadeInDown">
         <div class="col syw-section-head text-center syw-contactus-head-color">
