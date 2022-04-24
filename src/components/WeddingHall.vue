@@ -12,8 +12,12 @@
       </div>
       <div class="row syw-section-content text-center">
         <div class="desc">
-          <p class="font-himelody-title">노블 발렌티(삼성)</p>
-          <p class="font-himelody-title">주소: 서울시 강남구 봉은사로 637</p>
+          <a class="font-link" href="http://m.noblevalenti.co.kr/samsung">노블 발렌티(삼성)</a>
+          <div class="font-himelody-title">주소: 서울시 강남구 봉은사로 637</div>
+          <div class="font-himelody-title">주차: 하객 2시간 무료</div>
+          <div class="font-himelody-title">식사:
+            <a class="font-link" href="http://m.noblevalenti.co.kr/samsung-menu">Course A</a>
+          </div>
         </div>
         <div class="px-5 pb-1">
           <naver-maps
@@ -35,7 +39,7 @@
                 @onLoad="onLoadInfoWindow($event)"
             >
             <span>
-              <strong style="padding: 1em">노블 발렌티</strong>
+              <strong style="padding: 0.5em">노블 발렌티</strong>
             </span>
             </naver-info-window>
           </naver-maps>
@@ -159,6 +163,16 @@ export default {
   /*font-family: "Open Sans", Arial, sans-serif;*/
   /* color: #333333; */
   color: #848484;
+  /*color: rgba(0, 0, 0, 0.85);*/
+  padding: 3px;
+  /* font-size: 13px; */
+  font-size: 17px;
+}
+
+.font-link {
+  /*font-family: "Open Sans", Arial, sans-serif;*/
+  /* color: #333333; */
+  /*color: #848484;*/
   /*color: rgba(0, 0, 0, 0.85);*/
   padding: 3px;
   /* font-size: 13px; */
