@@ -1,7 +1,8 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import Main from "@/components/Main";
-import Gallery from "@/components/Gallery";
-import GuestBook from "@/components/GuestBook";
+
+const Main = () => import(/* webpackChunkName: "Main" */ "@/components/Main");
+const Gallery = () => import(/* webpackChunkName: "Gallery" */ "@/components/Gallery");
+const GuestBook = () => import(/* webpackChunkName: "GuestBook" */ "@/components/GuestBook");
 
 const routes = [
     {
